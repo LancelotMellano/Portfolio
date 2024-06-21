@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+
+    
+
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/f8defc0bc9.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <title>La vie de Lancelot</title>
+    <link rel="shortcut icon" href="letter-l.png" />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">Portfolio</a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+
+            <li class="nav__item">
+              <a href="PortfolioFr.html" class="nav__link">
+                <i class="uil uil-estate nav__icon"></i>Accueil
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="histoire.html" class="nav__link">
+                <i class="uil uil-estate nav__icon"></i>Mon Histoire
+              </a>
+            </li>
+
+
+            <li class="nav__item">
+              <a href="portfolio.html" class="nav__link">
+                <i class="uil uil-scenery nav__icon"></i>Portfolio
+              </a>
+            </li>
+
+
+
+          </ul>
+          <i class="uil uil-times nav__close" id="nav-close"></i>
+        </div>
+        
+
+      </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+
+
+    <main class="main">
+      <!--==================== Portfolio ====================-->
+      <section class="services section" id="portfolio">
+        <h2 class="section__title">Portfolio</h2>
+        <span class="section__subtitle">Travaux les plus récents</span>
+    
+        <div class="services__container container grid"> 
+          <!--==================== SERVICES 1 ====================-->
+          <div class="services__content">
+            <div>
+              <iconify-icon
+                icon="fluent-mdl2:my-network"
+                style="color: #59ccd9"
+                width="32"
+                height="45"
+              ></iconify-icon>
+              <h3 class="services__title">Web<br /></h3>
+            </div>
+            <span class="button button--flex button--small button--link services__button">
+              Voir plus
+              <i class="uil uil-arrow-right button__icon"></i>
+            </span>
+    
+            <div class="services__modal">
+              <div class="services__modal-content">
+                <i class="uil uil-times services__modal-close"></i>
+                <h2 class="services__modal-title">Web <br /></h2>
+                <div class="projet-web">
+                  <button class="modal-prev">&#10094;</button>
+                  <div class="services__modal-services carousel-container">
+                    <div class="services__modal-service carousel-item" id="projet2">
+                      <div class="image">
+                        <img src="thales.PNG" alt="" class="portfolio__img" />
+                      </div>
+                      <div class="texte">
+                        <h4 class="portfolio__title">Application web sur Raspberry</h4>
+                        <p>
+                          Durant la première année au BUT R&T, nous avons eu la chance de participer à un projet en collaboration avec Thales Alenia Space. L'objectif était d'aider les équipes de tests avionniques en leur proposant une solution qui leur permettrait de partager rapidement et efficacement les bonnes pratiques lié à leurs tests. Nous leur avons conçu un site web dynamique utilisant comme language de programmation HTML, CSS, Php, Python et MySQL. Ce site était hébergé sur un serveur local tournant sur un Raspberry. Il nous a permis de comprendre la base du fonctionnement d'un vrai site web professionnels avec une relation entre le serveur web, la base de données et le site web. De plus, nous avons dû prévoir des mesures de sécurité pour protéger le site web en cas d'attaque de personnes malveillantes.
+                        </p>
+                        <a href="https://github.com/xxIslexx/GITHUB" target="_blank" class="button button--flex button--small portfolio__button">
+                          Demo <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                      </div>
+                    </div>
+
+                    <!-- Contenu du projet 2 -->
+                    <div class="services__modal-service carousel-item" id="projet1">
+                            
+                      <div class="image">
+                        <img src="sitejeux.png" alt="" class="portfolio__img" />
+                      </div>
+                      <div class="texte">
+                        <h4 class="portfolio__title">Site web des jeux vidéo</h4>
+                        <p>
+                          Mon premier site web fut était axé sur les jeux vidéo. Ce projet m'a permis de découvrir les bases de la création de sites web en utilisant des langages de programmation tels que HTML, CSS, et un peu de JavaScript. En développant ce site, j'ai appris à structurer une page web, à la styliser pour la rendre attrayante et à intégrer des éléments interactifs avec JavaScript. Cette expérience a été fondamentale pour comprendre les principes de base du développement web et a marqué le début de mon parcours dans ce domaine.
+                        </p>
+                        <a href="http://isis.unice.fr/~ml306535/acces/Site/Accueil.html" target="_blank" class="button button--flex button--small portfolio__button">
+                          Demo <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="modal-next">&#10095;</button>
+                </div>
+                <div class="carousel-indicators"></div>
+              </div>
+            </div>
+          </div>
+    
+          <!--==================== SERVICES 2 ====================-->
+          <div class="services__content">
+            <div>
+              <iconify-icon
+                icon="fluent-mdl2:my-network"
+                style="color: #59ccd9"
+                width="32"
+                height="45"
+              ></iconify-icon>
+              <h3 class="services__title">Réseau<br /></h3>
+            </div>
+            <span class="button button--flex button--small button--link services__button">
+              Voir plus
+              <i class="uil uil-arrow-right button__icon"></i>
+            </span>
+    
+            <div class="services__modal">
+              <div class="services__modal-content">
+                <i class="uil uil-times services__modal-close"></i>
+                <h2 class="services__modal-title">Réseau <br /></h2>
+                <div class="projet-web">
+                  <div class="services__modal-services carousel-container">
+                    <div class="services__modal-service carousel-item" id="projet1">
+                      <div class="image">
+                        <img src="sae21.PNG" alt="" class="portfolio__img" />
+                      </div>
+                      <div class="texte">
+                        <h4 class="portfolio__title">Création du réseau d'une PME</h4>
+                        <p>
+                          Pendant ma formation en Réseaux, j'ai eu l'opportunité de créer un réseau virtuel similaire à celui d'une PME, ce projet était encadré par un intervenant d' EUROCOM. L'objectif était de concevoir un réseau complet comprenant un firewall, une DMZ, ainsi que des services DHCP et DNS et du nat dynamique/statique pour sortir de l'entreprise et de la DMZ vers internet. Ce projet m'a permis de maîtriser la sécurisation des réseaux internes contre les menaces externes et d'assurer une gestion efficace des adresses IP et des noms de domaine. Grâce à ce projet, j'ai également acquis une compréhension approfondie de la conception d'une architecture réseau robuste et sécurisée. J'ai appris à tester rigoureusement la performance et la sécurité du réseau pour garantir son bon fonctionnement.
+                        </p>
+                        <a href="SAE21-Réseau-PME.pkt" target="_blank" class="button button--flex button--small portfolio__button">
+                          Fichier Pkt <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <!-- Ajoutez d'autres contenus de projet selon le même modèle -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!--==================== SERVICES 3 ====================-->
+          <div class="services__content">
+            <div>
+              <iconify-icon
+                icon="fluent-mdl2:my-network"
+                style="color: #59ccd9"
+                width="32"
+                height="45"
+              ></iconify-icon>
+              <h3 class="services__title">Télécommunications <br /></h3>
+            </div>
+            <span class="button button--flex button--small button--link services__button">
+              Voir plus
+              <i class="uil uil-arrow-right button__icon"></i>
+            </span>
+    
+            <div class="services__modal">
+              <div class="services__modal-content">
+                <i class="uil uil-times services__modal-close"></i>
+                <h2 class="services__modal-title">Télécommunications <br /></h2>
+                <div class="projet-web">
+                  <div class="services__modal-services carousel-container">
+                    <div class="services__modal-service carousel-item" id="projet2">
+                      <div class="image">
+                        <img src="LoRa.jpg" alt="" class="portfolio__img" />
+                      </div>
+                      <div class="texte">
+                        <h4 class="portfolio__title">Etude d'un systèmes sans fil</h4>
+                        <p>
+                          Pendant ma formation en Télécommunications, j'ai conçu un robot télécommandé pour explorer et surveiller des zones inaccessibles ou dangereuses. Utilisant des cartes LoRa UCA pour l'émission et la réception, l'objectif était de créer un cahier des charges détaillé et d'étudier la faisabilité du projet en termes de portée, consommation et débit. Nous avons validé notre travail lors des séances encadrées. Le robot, contrôlé à distance, était équipé de capteurs pour mesurer la température, les gaz toxiques, la distance et l'humidité, transmettant les données en temps réel. Ce projet m'a permis de comprendre les défis des systèmes de communication à longue portée avec des contraintes énergétiques et de débit. J'ai appris à élaborer un cahier des charges précis et à évaluer la faisabilité technique d'un projet en étudiant la consommation énergétique et les performances des cartes LoRa.
+                        </p>
+                        <a href="Rapport-Projet-Lora.pdf" target="_blank" class="button button--flex button--small portfolio__button">
+                          Rapport <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <!-- Ajoutez d'autres contenus de projet selon le même modèle -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!--==================== SERVICES 4 ====================-->
+          <div class="services__content">
+            <div>
+              <iconify-icon
+                icon="fluent-mdl2:my-network"
+                style="color: #59ccd9"
+                width="32"
+                height="45"
+              ></iconify-icon>
+              <h3 class="services__title">Communication<br /></h3>
+            </div>
+            <span class="button button--flex button--small button--link services__button">
+              Voir plus
+              <i class="uil uil-arrow-right button__icon"></i>
+            </span>
+    
+            <div class="services__modal">
+              <div class="services__modal-content">
+                <i class="uil uil-times services__modal-close"></i>
+                <h2 class="services__modal-title">Communication <br /></h2>
+                <div class="projet-web">
+                  <div class="services__modal-services carousel-container">
+                    <div class="services__modal-service carousel-item" id="projet2">
+                      <div class="image">
+                        <img src="guide_survie.PNG" alt="" class="portfolio__img" />
+                      </div>
+                      <div class="texte">
+                        <h4 class="portfolio__title">Guide de survie pour les R&T</h4>
+                        <p>
+                          Pendant ma formation en communication, j'ai eu l'opportunité de travailler sur la création du "Guide de survie des études en R&T". Ce projet avait pour objectif d'aider les futurs étudiants à s'adapter à leur nouvelle vie universitaire en leur fournissant des informations pratiques et utiles sur divers aspects de la formation.
+                          La rédaction du guide nous a permis de développer nos compétences en écriture, en travaillant sur des articles courts et informatifs, tout en utilisant un ton humoristique pour rendre le contenu plus engageant. Nous avons également appris à utiliser des outils de mise en page comme Canva pour créer un livret attrayant et professionnel.
+                          Ce projet m'a permis de développer des compétences essentielles en gestion de projet, en communication et en collaboration et en rédaction.
+                        </p>
+                        <a href="Guide-de-survie.pdf" target="_blank" class="button button--flex button--small portfolio__button">
+                          Demo <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <!-- Ajoutez d'autres contenus de projet selon le même modèle -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+
+    <!--==================== MAIN JS ====================-->
+    <script >
+
+        
+/*==================== MENU SHOW Y HIDDEN ====================*/
+const navMenu = document.getElementById("nav-menu"),
+  navToggle = document.getElementById("nav-toggle"),
+  navClose = document.getElementById("nav-close");
+
+/*===== MENU SHOW =====*/
+/* Validate if constant exists */
+if (navToggle) {
+  navToggle.addEventListener("click", () => {
+    navMenu.classList.add("show-menu");
+  });
+}
+
+/*===== MENU HIDDEN =====*/
+/* Validate if constant exists */
+if (navClose) {
+  navClose.addEventListener("click", () => {
+    navMenu.classList.remove("show-menu");
+  });
+}
+
+
+/*==================== REMOVE MENU MOBILE ====================*/
+const navLink = document.querySelectorAll(".nav__link");
+
+function linkAction() {
+  const navMenu = document.getElementById("nav-menu");
+  // When we click on each nav__link, we remove the show-menu class
+  navMenu.classList.remove("show-menu");
+}
+navLink.forEach((n) => n.addEventListener("click", linkAction));
+
+/*==================== SERVICES MODAL ====================*/
+const modalViews = document.querySelectorAll(".services__modal"),
+  modalBtns = document.querySelectorAll(".services__button"),
+  modalCloses = document.querySelectorAll(".services__modal-close");
+
+let modal = function (modalClick) {
+  modalViews[modalClick].classList.add("active-modal");
+};
+
+modalBtns.forEach((modalBtn, i) => {
+  modalBtn.addEventListener("click", () => {
+    modal(i);
+  });
+});
+
+modalCloses.forEach((modalClose) => {
+  modalClose.addEventListener("click", () => {
+    modalViews.forEach((modalView) => {
+      modalView.classList.remove("active-modal");
+    });
+  });
+});
+
+
+/* modal portfolio */
+
+const modalContent = document.querySelector('.services__modal-content');
+const modalServices = modalContent.querySelectorAll('.services__modal-service');
+const carouselIndicators = document.querySelector('.carousel-indicators');
+
+// Création des indicateurs en fonction du nombre de services
+modalServices.forEach((service, index) => {
+  let indicator = document.createElement('span');
+  indicator.classList.add('indicator');
+  indicator.dataset.index = index;
+  indicator.addEventListener('click', () => {
+    setActiveService(index);
+  });
+  carouselIndicators.appendChild(indicator);
+});
+
+let activeServiceIndex = 0;
+
+// Fonction pour mettre à jour les indicateurs et le service affiché
+function setActiveService(newIndex) {
+  // Mettre à jour les indicateurs
+  document.querySelectorAll('.carousel-indicators .indicator').forEach((indicator, index) => {
+    if (index === newIndex) {
+      indicator.classList.add('active');
+    } else {
+      indicator.classList.remove('active');
+    }
+  });
+
+  // Mettre à jour le service affiché
+  activeServiceIndex = newIndex;
+  updateModalDisplay();
+}
+
+function updateModalDisplay() {
+  // Masquer tous les services et afficher le service actif
+  modalServices.forEach((service, index) => {
+    service.style.display = (index === activeServiceIndex) ? 'flex' : 'none';
+  });
+}
+
+// Fonction pour afficher le service suivant/précédent avec mise à jour des indicateurs
+function showNextService() {
+  setActiveService((activeServiceIndex + 1) % modalServices.length);
+}
+
+function showPrevService() {
+  setActiveService((activeServiceIndex - 1 + modalServices.length) % modalServices.length);
+}
+
+// Sélectionner les boutons et attacher les événements
+document.querySelector('.modal-prev').addEventListener('click', showPrevService);
+document.querySelector('.modal-next').addEventListener('click', showNextService);
+
+// Initialisation pour afficher le premier service et mettre à jour les indicateurs
+setActiveService(activeServiceIndex);
+    </script>
+    
+
+
+
+  </body>
+</html>
