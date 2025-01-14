@@ -22,8 +22,8 @@
   </head>
   <body>
     <header class="header" id="header">
-      <nav class="nav container">
-        <a href="#" class="nav__logo">Mon Histoire</a>
+      <nav class="nav containerHis">
+        <a href="#" class="nav__logo">A propos</a>
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list grid">
             <li class="nav__item">
@@ -34,9 +34,15 @@
 
             <li class="nav__item">
               <a href="histoire.html" class="nav__link">
-                <i class="uil uil-estate nav__icon"></i>Mon Histoire
+                <i class="uil uil-estate nav__icon"></i>A propos
               </a>
             </li>
+
+            <li class="nav__item">
+                <a href="profil.html" class="nav__link">
+                  <i class="uil uil-estate nav__icon"></i>Profil Technique
+                </a>
+              </li>
 
 
             <li class="nav__item">
@@ -59,7 +65,7 @@
           <h2 class="section__title">Mon histoire</h2>
           <span class="section__subtitle">Ma présentation</span>
   
-          <div class="about__container container grid">
+          <div class="about__container containerHis grid">
               <div class="about__data">
                   <p class="about__description">
                       Dans ma vie, je me suis intéressé à énormément de choses, mais deux domaines en particulier ont retenu mon attention : le sport et l'informatique. En effet, étant le cadet d'une fratrie sportive, j'ai toujours pratiqué énormément de sport. En grandissant, j'ai découvert la boxe thaï, qui est devenue pour moi bien plus qu'un simple sport, mais une philosophie de vie qui m'a inculqué des valeurs telles que le dépassement de soi, le courage, la loyauté et la cohésion. De plus, étant le fils d'un père ingénieur en informatique, j'ai très tôt commencé à me familiariser avec les ordinateurs et à suivre sa passion. Alors, lorsque j'ai découvert ce qu'était la cybersécurité, j'ai tout de suite su ce que je voulais faire plus tard : un métier combinant le sport, la cybersécurité et mes valeurs, à savoir cyber-combattant dans l'Armée Française. Et pour y arriver, j'ai donc décidé de faire un BUT Réseaux et Télécommunications en parcours cybersécurité, puis d'enchaîner avec une école d'ingénieurs. Pour me préparer au mieux, je me suis déjà engagé en tant que militaire réserviste dans l'armée de terre, au 21e régiment d'infanterie de marine à Fréjus, sur un contrat de 5 ans.
@@ -86,7 +92,7 @@
       </section>
   
       <!--==================== Parcours & Compétences ====================-->
-      <section class="qualification-skills section">
+
           <div class="qualification__section" id="parcours">
               <div class="section__title-wrapper">
                   <h2 class="section__title">Parcours</h2>
@@ -107,7 +113,7 @@
                       <!--==================== QUALIFICATION CONTENT 1 ====================-->
                       <div class="qualification__content qualification__active" data-content id="education">
                           <!--==================== QUALIFICATION 1 ====================-->
-                          <div class="qualification__data">
+                          <div class="qualification__data gauche">
                               <div>
                                   <h3 class="qualification__title">Brevet des collèges</h3>
                                   <span class="qualification__subtitle">Collège Jean zay, Rousset(13)</span>
@@ -122,7 +128,7 @@
                               </div>
                           </div>
                           <!--==================== QUALIFICATION 2 ====================-->
-                          <div class="qualification__data">
+                          <div class="qualification__data droite">
                               <div></div>
                               <div>
                                   <span class="qualification__rounder"></span>
@@ -138,7 +144,7 @@
                               </div>
                           </div>
                           <!--==================== QUALIFICATION 3 ====================-->
-                          <div class="qualification__data">
+                          <div class="qualification__data gauche">
                               <div>
                                   <h3 class="qualification__title">BUT R&T</h3>
                                   <span class="qualification__subtitle">IUT de Nice, Sophia-antipolis(06)</span>
@@ -153,7 +159,7 @@
                               </div>
                           </div>
                           <!--==================== QUALIFICATION 4 ====================-->
-                          <div class="qualification__data">
+                          <div class="qualification__data droite">
                               <div></div>
                               <div>
                                   <span class="qualification__rounder"></span>
@@ -170,218 +176,109 @@
                       </div>
                       <!--==================== QUALIFICATION CONTENT 2 ====================-->
                       <div class="qualification__content" data-content id="work">
-                          <!--==================== QUALIFICATION 1 ====================-->
-                          <div class="qualification__data">
-                              <div>
-                                  <h3 class="qualification__title">Ouvrier agricole</h3>
-                                  <span class="qualification__subtitle">Vacances d'été, Peynier(13)</span>
-                                  <div class="qualification__calendar">
-                                      <i class="uil uil-calendar-alt"></i>
-                                      06/2023 - 08/2023
-                                  </div>
-                              </div>
-                              <div>
-                                  <span class="qualification__rounder"></span>
-                                  <span class="qualification__line"></span>
-                              </div>
-                          </div>
-                          <!--==================== QUALIFICATION 2 ====================-->
-                          <div class="qualification__data">
-                              <div></div>
-                              <div>
-                                  <span class="qualification__rounder"></span>
-                              </div>
-                              <div>
-                                  <h3 class="qualification__title">Militaire réserviste</h3>
-                                  <span class="qualification__subtitle">21ème régiment d'Infanterie de Marine(81)</span>
-                                  <div class="qualification__calendar">
-                                      <i class="uil uil-calendar-alt"></i>
-                                      2023 - 2028
-                                  </div>
-                              </div>
-                          </div>
+
+                        <div class="qualification__data gauche">
+                            <div>
+                                <h3 class="qualification__title">Ouvrier agricole</h3>
+                                <span class="qualification__subtitle">Vacances d'été, Peynier(13)</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    06/2023 - 08/2023
+                                </div>
+                            </div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+                        <!--==================== QUALIFICATION 2 ====================-->
+                        <div class="qualification__data droite" >
+                            <div></div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                            <div>
+                                <h3 class="qualification__title">Militaire réserviste</h3>
+                                <span class="qualification__subtitle">21ème régiment d'Infanterie de Marine(81)</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2023 - 2028
+                                </div>
+                            </div>
+                        </div>
+                        <!--==================== QUALIFICATION 3 ====================-->
+                        <div class="qualification__data gauche" >
+                            <div>
+                                <h3 class="qualification__title">Administrateur Réseaux & Systèmes</h3>
+                                <span class="qualification__subtitle">Alternance à la mairie de Sainte-Maxime</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2024 - 2025
+                                </div>
+                            </div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                
+                            </div>
+                        </div>
+                       
+
                       </div>
                   </div>
               </div>
           </div>
   
-          <!--==================== Compétences ====================-->
-          <div class="skills section" id="competences">
-              <div class="section__title-wrapper">
-                  <h2 class="section__title">Compétences</h2>
-                  <span class="section__subtitle">Mon niveau technique</span>
+   
+     
+        <section class="passion sectionne" id="passions">
+            <h2 class="section__title">Mes passions</h2>
+            <span class="section__subtitle">Ce qui me motive au quotidien</span>
+          
+            <div class="passions__container">
+              <!-- Passion 1: Boxe Thaï -->
+              <div class="passion__card">
+                <div class="passion__front">
+                  <img src="boxe.png" alt="Boxe Thaï" />
+                </div>
+                <div class="passion__back">
+                  <p>
+                    La boxe thaï est bien plus qu'un simple sport pour moi; elle est
+                    devenue une véritable passion qui a façonné ma vie. À travers des
+                    entraînements rigoureux et des combats intenses, j'ai appris la
+                    persévérance, le courage et la résilience. Chaque moment sur le ring
+                    m'a poussé à dépasser mes limites, renforçant ainsi mon mental et mon
+                    esprit.
+                  </p>
+                </div>
               </div>
-              <div class="skills__container container grid">
-                  <div>
-                      <!--==================== SKILL-1 ====================-->
-                      <div class="skills__content skills__open">
-                          <div class="skills__header">
-                              <i class="uil uil-analytics skills__icon"></i>
-                              <div>
-                                  <h1 class="skills__title">Programmation</h1>
-                              </div>
-                              <i class="uil uil-angle-down skills__arrow"></i>
-                          </div>
-                          <div class="skills__list grid">
-                              <div class="skills__data">
-                                  <div class="skills__titles">
-                                      <h3 class="skills__name">Python
-                                          <img src="python.png" alt="Python Logo" class="skills__logo" />
-                                      </h3>
-                                      <span class="skills__number">60%</span>
-                                  </div>
-                                  <div class="skills__bar">
-                                      <span class="skills__percentage skills__python"></span>
-                                  </div>
-                              </div>
-                              <div class="skills__data">
-                                  <div class="skills__titles">
-                                      <h3 class="skills__name">Language C
-                                          <img src="C.png" alt="language C Logo" class="skills__logo" />
-                                      </h3>
-                                      <span class="skills__number">70%</span>
-                                  </div>
-                                  <div class="skills__bar">
-                                      <span class="skills__percentage skills__tab"></span>
-                                  </div>
-                              </div>
-                              <div class="skills__data">
-                                  <div class="skills__titles">
-                                      <h3 class="skills__name">SQL
-                                          <img src="sql.png" alt="sql Logo" class="skills__logo" />
-                                      </h3>
-                                      <span class="skills__number">40%</span>
-                                  </div>
-                                  <div class="skills__bar">
-                                      <span class="skills__percentage skills__sql"></span>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <!--==================== SKILLS 2 ====================-->
-                      <div class="skills__content skills__close">
-                          <div class="skills__header">
-                              <i class="uil uil-money-bill skills__icon"></i>
-                              <div>
-                                  <h1 class="skills__title">Réseaux</h1>
-                              </div>
-                              <i class="uil uil-angle-down skills__arrow"></i>
-                          </div>
-                          <div class="skills__list grid">
-                              <div class="skills__data">
-                                  <div class="skills__titles">
-                                      <h3 class="skills__name">Cisco Packet tracer
-                                          <img src="PT.png" alt="PT Logo" class="skills__logo" />
-                                      </h3>
-                                      <span class="skills__number">80%</span>
-                                  </div>
-                                  <div class="skills__bar">
-                                      <span class="skills__percentage skills__bank"></span>
-                                  </div>
-                              </div>
-                              <div class="skills__data">
-                                  <div class="skills__titles">
-                                      <h3 class="skills__name">Wireshark
-                                          <img src="WS.png" alt="Wireshark Logo" class="skills__logo" />
-                                      </h3>
-                                      <span class="skills__number">50%</span>
-                                  </div>
-                                  <div class="skills__bar">
-                                      <span class="skills__percentage skills__counter"></span>
-                                  </div>
-                              </div>
-                              <div class="skills__data">
-                                  <div class="skills__titles">
-                                      <h3 class="skills__name">Linux
-                                          <img src="linux.png" alt="linux Logo" class="skills__logo" />
-                                      </h3>
-                                      <span class="skills__number">70%</span>
-                                  </div>
-                                  <div class="skills__bar">
-                                      <span class="skills__percentage skills__google"></span>
-                                  </div>
-                              </div>
-                              <div class="skills__data">
-                                  <div class="skills__titles">
-                                      <h3 class="skills__name">Windows
-                                          <img src="win.png" alt="Windows Logo" class="skills__logo" />
-                                      </h3>
-                                      <span class="skills__number">90%</span>
-                                  </div>
-                                  <div class="skills__bar">
-                                      <span class="skills__percentage skills__office"></span>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div>
-                      <!--==================== SKILLS 3 ====================-->
-                      <div class="skills__content skills__close">
-                          <div class="skills__header">
-                              <i class="uil uil-brackets-curly skills__icon"></i>
-                              <div>
-                                  <h1 class="skills__title">Développeur Web</h1>
-                              </div>
-                              <i class="uil uil-angle-down skills__arrow"></i>
-                          </div>
-                          <div class="skills__list grid">
-                              <div class="skills__data">
-                                  <div class="skills__titles">
-                                      <h3 class="skills__name">HTML
-                                          <img src="html.png" alt="html Logo" class="skills__logo" />
-                                      </h3>
-                                      <span class="skills__number">90%</span>
-                                  </div>
-                                  <div class="skills__bar">
-                                      <span class="skills__percentage skills__html"></span>
-                                  </div>
-                              </div>
-                              <div class="skills__data">
-                                  <div class="skills__titles">
-                                      <h3 class="skills__name">CSS
-                                          <img src="css.png" alt="CSS Logo" class="skills__logo" />
-                                      </h3>
-                                      <span class="skills__number">80%</span>
-                                  </div>
-                                  <div class="skills__bar">
-                                      <span class="skills__percentage skills__css"></span>
-                                  </div>
-                              </div>
-                              <div class="skills__data">
-                                  <div class="skills__titles">
-                                      <h3 class="skills__name">JavaScript
-                                          <img src="js.png" alt="JS Logo" class="skills__logo" />
-                                      </h3>
-                                      <span class="skills__number">50%</span>
-                                  </div>
-                                  <div class="skills__bar">
-                                      <span class="skills__percentage skills__js"></span>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
+          
+              <!-- Passion 2: Placeholder for second passion -->
+              <div class="passion__card">
+                <div class="passion__front">
+                  <img src="pc.jpg" alt="Passion 2" />
+                </div>
+                <div class="passion__back">
+                  <p>
+                    L'informatique est une passion que j'ai développée au fil des années, d'abord en montant mes propres PC, puis en explorant différents domaines comme la programmation, les réseaux et la cybersécurité. J'aime comprendre le fonctionnement des systèmes, identifier des problèmes, les résoudre, et surtout apprendre constamment.
+                  </p>
+                </div>
               </div>
-          </div>
-      </section>
-
-      <section class="passion sectionne" id="passion">
-        <h2 class="section__title">Ma passion</h2>
-        <span class="section__subtitle">La boxe thaï</span>
-      
-        <div class="passion__container  grid">
-          <div class="passion__img">
-            <img src="boxe.png" alt="photo de moi" />
-          </div>
-      
-          <div class="passion__data">
-            <p class="passion__description">
-              La boxe thaï est bien plus qu'un simple sport pour moi; elle est devenue une véritable passion qui a façonné ma vie. À travers des entraînements rigoureux et des combats intenses, j'ai appris la persévérance, le courage et la résilience. Chaque moment sur le ring m'a poussé à dépasser mes limites, renforçant ainsi mon mental et mon esprit. Cette discipline m'a également enseigné l'importance de la loyauté et de l'esprit d'équipe, des valeurs que j'applique au quotidien. Grâce à cette passion, j'ai eu l'honneur de participer à plusieurs compétitions et de devenir champion PACA, une réalisation qui symbolise tout ce que la boxe thaï m'a apporté.
-            </p>
-          </div>
-        </div>
-      </section>
+          
+              <!-- Passion 3: Placeholder for third passion -->
+              <div class="passion__card">
+                <div class="passion__front">
+                  <img src="amitié.jpeg" alt="Passion 3" />
+                </div>
+                <div class="passion__back">
+                  <p>
+                    Je considère mes proches comme un pilier essentiel dans ma vie. L’amitié et la famille occupent une place importante dans mes valeurs, et j’accorde beaucoup d’importance aux moments partagés, à la loyauté et au soutien mutuel.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          
       
 
 

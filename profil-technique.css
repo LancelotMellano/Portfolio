@@ -1,0 +1,258 @@
+
+
+
+
+/* =============== STYLES DE BASE =============== */
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #162526;
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #00bcd4;
+    margin-bottom: 1rem;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  /* =============== SECTION CERTIFICATIONS =============== */
+  .certification__card {
+    background: #1e2b2e;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 30%;
+  }
+
+  .certification__card:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+  
+  .certification__card h3 {
+    color: #00bcd4;
+    font-size: 1.5rem;
+  }
+  
+  .certification__card p {
+    color: white;
+    font-size: 1rem;
+  }
+  
+
+  /* =============== SECTION OUTILS TECHNIQUES =============== */
+  .outils__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .outil__card {
+    background: #1e2b2e;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    width: 30%;
+  }
+  .outil__card:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+  .outil__card i {
+    font-size: 3rem;
+    color: #00bcd4;
+  }
+  
+  .outil__card h3 {
+    color: #00bcd4;
+    margin: 1rem 0;
+  }
+  
+  .outil__card p {
+    color: white;
+  }
+  .outil__logo{
+    width: 85px;
+    height: 70px;
+  }
+
+  /*==================== SKILLS ====================*/
+
+  .skills__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #16212273;
+    border-radius: 80px;
+    box-shadow: 0 24px 36px rgba(0, 0, 0, 0.1);
+  }
+
+  
+  .skills__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--mb-2-5);
+    cursor: pointer;
+  }
+
+  .skills__content {
+    width: 140%;
+  }
+  
+  .skills__icon,
+  .skills__arrow {
+    font-size: 2rem;
+    color: var(--first-color);
+  }
+  
+  .skills__icon {
+    margin-right: var(--mb-0-75);
+  }
+  
+  .skills__title {
+    font-size: var(--h3-font-size);
+  }
+  
+  .skills__subtitle {
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+  }
+  
+  .skills__arrow {
+    margin-left: auto;
+    transition: 0.4s;
+  }
+  
+  .skills__list {
+    width: 100%; /* Prend toute la largeur disponible */
+    padding-left: 2rem;
+  }
+  
+  .skills__data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    width: 100%; /* Élargir les barres de progression */
+  }
+  
+  
+  .skills__titles {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--mb-0-5);
+  }
+  
+  .skills__name {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+  }
+  
+  .skills__bar {
+    width: 75%; /* Ajuste la largeur de la barre de progression */
+    background-color: #ddd;
+    border-radius: 5px;
+    height: 8px;
+  }
+  
+  .skills__percentage {
+    height: 8px;
+    background-color: #00bcd4;
+    border-radius: 5px;
+  }
+  
+  
+  .skills__bar {
+    background-color: var(--first-color-lighter);
+  }
+  
+  .skills__percentage {
+    display: block;
+    background-color: var(--first-color);
+  }
+  
+  .skills__html {
+    width: 90%;
+  }
+  
+  .skills__css {
+    width: 80%;
+  }
+  
+  .skills__js {
+    width: 50%;
+  }
+  
+  .skills__wordpress {
+    width: 70%;
+  }
+  
+  .skills__python {
+    width: 60%;
+  }
+  
+  .skills__tab {
+    width: 70%;
+  }
+  
+  .skills__sql {
+    width: 40%;
+  }
+  
+  .skills__google {
+    width: 70%;
+  }
+  
+  .skills__bank {
+    width: 80%;
+  }
+  
+  .skills__google {
+    width: 70%;
+  }
+  
+  .skills__counter {
+    width: 50%;
+  }
+  
+  .skills__office {
+    width: 90%;
+  }
+  
+  .skills__logo {
+      width: 45px; /* ou la taille que vous préférez */
+      height: 40px; /* ou la taille que vous préférez */
+      border-radius: 25%;
+      margin-left: 0.5rem;
+      
+    }
+  
+  .skills__close .skills__list {
+    height: 0;
+    overflow: hidden;
+  }
+  
+  .skills__open .skills__list {
+    height: max-content;
+    margin-bottom: var(--mb-2-5);
+  }
+  
+  .skills__open .skills__arrow {
+    transform: rotate(-180deg);
+  }
+  

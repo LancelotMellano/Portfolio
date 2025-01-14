@@ -35,11 +35,17 @@
 
             <li class="nav__item">
               <a href="histoire.html" class="nav__link">
-                <i class="uil uil-estate nav__icon"></i>Mon Histoire
+                <i class="uil uil-estate nav__icon"></i>A propos
               </a>
             </li>
 
-
+              
+            <li class="nav__item">
+              <a href="profil.html" class="nav__link">
+                <i class="uil uil-scenery nav__icon"></i>Profil technique
+              </a>
+            </li>
+            
             <li class="nav__item">
               <a href="portfolio.html" class="nav__link">
                 <i class="uil uil-scenery nav__icon"></i>Portfolio
@@ -56,334 +62,473 @@
       </nav>
     </header>
 
-    <!--==================== MAIN ====================-->
+<!--==================== MAIN ====================-->
+<main class="main">
+  <!--==================== Portfolio ====================-->
+  <section class="services section" id="portfolio">
+    <h2 class="section__title">Portfolio</h2>
+    <span class="section__subtitle">Travaux les plus récents</span>
 
+    <div class="services__container container grid">
+      <!--==================== SERVICES 1: WEB ====================-->
+      <div class="services__content">
+        <div>
+          <iconify-icon icon="fluent-mdl2:my-network" style="color: #59ccd9" width="32" height="45"></iconify-icon>
+          <h3 class="services__title">Web<br /></h3>
+        </div>
+        <span class="button button--flex button--small button--link services__button" data-modal="web-modal">
+          Voir plus
+          <i class="uil uil-arrow-right button__icon"></i>
+        </span>
 
-    <main class="main">
-      <!--==================== Portfolio ====================-->
-      <section class="services section" id="portfolio">
-        <h2 class="section__title">Portfolio</h2>
-        <span class="section__subtitle">Travaux les plus récents</span>
-    
-        <div class="services__container container grid"> 
-          <!--==================== SERVICES 1 ====================-->
-          <div class="services__content">
-            <div>
-              <iconify-icon
-                icon="fluent-mdl2:my-network"
-                style="color: #59ccd9"
-                width="32"
-                height="45"
-              ></iconify-icon>
-              <h3 class="services__title">Web<br /></h3>
-            </div>
-            <span class="button button--flex button--small button--link services__button">
-              Voir plus
-              <i class="uil uil-arrow-right button__icon"></i>
-            </span>
-    
-            <div class="services__modal">
-              <div class="services__modal-content">
-                <i class="uil uil-times services__modal-close"></i>
-                <h2 class="services__modal-title">Web <br /></h2>
-                <div class="projet-web">
-                  <button class="modal-prev">&#10094;</button>
-                  <div class="services__modal-services carousel-container">
-                    <div class="services__modal-service carousel-item" id="projet2">
-                      <div class="image">
-                        <img src="thales.PNG" alt="" class="portfolio__img" />
-                      </div>
-                      <div class="texte">
-                        <h4 class="portfolio__title">Application web sur Raspberry</h4>
-                        <p>
-                          Durant la première année au BUT R&T, nous avons eu la chance de participer à un projet en collaboration avec Thales Alenia Space. L'objectif était d'aider les équipes de tests avionniques en leur proposant une solution qui leur permettrait de partager rapidement et efficacement les bonnes pratiques lié à leurs tests. Nous leur avons conçu un site web dynamique utilisant comme language de programmation HTML, CSS, Php, Python et MySQL. Ce site était hébergé sur un serveur local tournant sur un Raspberry. Il nous a permis de comprendre la base du fonctionnement d'un vrai site web professionnels avec une relation entre le serveur web, la base de données et le site web. De plus, nous avons dû prévoir des mesures de sécurité pour protéger le site web en cas d'attaque de personnes malveillantes.
-                        </p>
-                        <a href="https://github.com/xxIslexx/GITHUB" target="_blank" class="button button--flex button--small portfolio__button">
-                          Demo <i class="uil uil-arrow-right button__icon"></i>
-                        </a>
-                      </div>
-                    </div>
-
-                    <!-- Contenu du projet 2 -->
-                    <div class="services__modal-service carousel-item" id="projet1">
-                            
-                      <div class="image">
-                        <img src="sitejeux.png" alt="" class="portfolio__img" />
-                      </div>
-                      <div class="texte">
-                        <h4 class="portfolio__title">Site web des jeux vidéo</h4>
-                        <p>
-                          Mon premier site web fut était axé sur les jeux vidéo. Ce projet m'a permis de découvrir les bases de la création de sites web en utilisant des langages de programmation tels que HTML, CSS, et un peu de JavaScript. En développant ce site, j'ai appris à structurer une page web, à la styliser pour la rendre attrayante et à intégrer des éléments interactifs avec JavaScript. Cette expérience a été fondamentale pour comprendre les principes de base du développement web et a marqué le début de mon parcours dans ce domaine.
-                        </p>
-                        <a href="http://isis.unice.fr/~ml306535/acces/Site/Accueil.html" target="_blank" class="button button--flex button--small portfolio__button">
-                          Demo <i class="uil uil-arrow-right button__icon"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <button class="modal-next">&#10095;</button>
+        <!-- Modal Web -->
+        <div class="services__modal" id="web-modal">
+          <div class="services__modal-content">
+            <i class="uil uil-times services__modal-close" data-close="web-modal"></i>
+            <h2 class="services__modal-title">Web <br /></h2>
+            <div class="services__modal-services">
+              <div class="services__modal-service carousel-item">
+                <div class="image">
+                  <img src="thales.PNG" alt="Application web sur Raspberry" class="portfolio__img">
                 </div>
-                <div class="carousel-indicators"></div>
+                <div class="texte">
+                  <h4 class="portfolio__title">Application web sur Raspberry</h4>
+                  <p>Durant la première année au BUT R&T, nous avons eu la chance de participer à un projet en collaboration avec Thales Alenia Space. L'objectif était d'aider les équipes de tests avionniques en leur proposant une solution qui leur permettrait de partager rapidement et efficacement les bonnes pratiques lié à leurs tests. Nous leur avons conçu un site web dynamique utilisant comme language de programmation HTML, CSS, Php, Python et MySQL. Ce site était hébergé sur un serveur local tournant sur un Raspberry. Il nous a permis de comprendre la base du fonctionnement d'un vrai site web professionnels avec une relation entre le serveur web, la base de données et le site web. De plus, nous avons dû prévoir des mesures de sécurité pour protéger le site web en cas d'attaque de personnes malveillantes.</p>
+                  <a href="https://github.com/xxIslexx/GITHUB" target="_blank" class="button button--flex button--small portfolio__button">Demo</a>
+                </div>
               </div>
-            </div>
-          </div>
-    
-          <!--==================== SERVICES 2 ====================-->
-          <div class="services__content">
-            <div>
-              <iconify-icon
-                icon="fluent-mdl2:my-network"
-                style="color: #59ccd9"
-                width="32"
-                height="45"
-              ></iconify-icon>
-              <h3 class="services__title">Réseau<br /></h3>
-            </div>
-            <span class="button button--flex button--small button--link services__button">
-              Voir plus
-              <i class="uil uil-arrow-right button__icon"></i>
-            </span>
-    
-            <div class="services__modal">
-              <div class="services__modal-content">
-                <i class="uil uil-times services__modal-close"></i>
-                <h2 class="services__modal-title">Réseau <br /></h2>
-                <div class="projet-web">
-                  <div class="services__modal-services carousel-container">
-                    <div class="services__modal-service carousel-item" id="projet1">
-                      <div class="image">
-                        <img src="sae21.PNG" alt="" class="portfolio__img" />
-                      </div>
-                      <div class="texte">
-                        <h4 class="portfolio__title">Création du réseau d'une PME</h4>
-                        <p>
-                          Pendant ma formation en Réseaux, j'ai eu l'opportunité de créer un réseau virtuel similaire à celui d'une PME, ce projet était encadré par un intervenant d' EUROCOM. L'objectif était de concevoir un réseau complet comprenant un firewall, une DMZ, ainsi que des services DHCP et DNS et du nat dynamique/statique pour sortir de l'entreprise et de la DMZ vers internet. Ce projet m'a permis de maîtriser la sécurisation des réseaux internes contre les menaces externes et d'assurer une gestion efficace des adresses IP et des noms de domaine. Grâce à ce projet, j'ai également acquis une compréhension approfondie de la conception d'une architecture réseau robuste et sécurisée. J'ai appris à tester rigoureusement la performance et la sécurité du réseau pour garantir son bon fonctionnement.
-                        </p>
-                        <a href="SAE21-Réseau-PME.pkt" target="_blank" class="button button--flex button--small portfolio__button">
-                          Fichier Pkt <i class="uil uil-arrow-right button__icon"></i>
-                        </a>
-                      </div>
-                    </div>
-                    <!-- Ajoutez d'autres contenus de projet selon le même modèle -->
-                  </div>
+              <div class="services__modal-service carousel-item">
+                <div class="image">
+                  <img src="sitejeux.png" alt="Site web des jeux vidéo" class="portfolio__img">
+                </div>
+                <div class="texte">
+                  <h4 class="portfolio__title">Site web des jeux vidéo</h4>
+                  <p>Mon premier site web fut était axé sur les jeux vidéo. Ce projet m'a permis de découvrir les bases de la création de sites web en utilisant des langages de programmation tels que HTML, CSS, et un peu de JavaScript. En développant ce site, j'ai appris à structurer une page web, à la styliser pour la rendre attrayante et à intégrer des éléments interactifs avec JavaScript. Cette expérience a été fondamentale pour comprendre les principes de base du développement web et a marqué le début de mon parcours dans ce domaine.</p>
+                  <a href="http://isis.unice.fr/~ml306535/acces/Site/Accueil.html" target="_blank" class="button button--flex button--small portfolio__button">Demo</a>
                 </div>
               </div>
             </div>
-          </div>
-    
-          <!--==================== SERVICES 3 ====================-->
-          <div class="services__content">
-            <div>
-              <iconify-icon
-                icon="fluent-mdl2:my-network"
-                style="color: #59ccd9"
-                width="32"
-                height="45"
-              ></iconify-icon>
-              <h3 class="services__title">Télécommunications <br /></h3>
-            </div>
-            <span class="button button--flex button--small button--link services__button">
-              Voir plus
-              <i class="uil uil-arrow-right button__icon"></i>
-            </span>
-    
-            <div class="services__modal">
-              <div class="services__modal-content">
-                <i class="uil uil-times services__modal-close"></i>
-                <h2 class="services__modal-title">Télécommunications <br /></h2>
-                <div class="projet-web">
-                  <div class="services__modal-services carousel-container">
-                    <div class="services__modal-service carousel-item" id="projet2">
-                      <div class="image">
-                        <img src="LoRa.jpg" alt="" class="portfolio__img" />
-                      </div>
-                      <div class="texte">
-                        <h4 class="portfolio__title">Etude d'un systèmes sans fil</h4>
-                        <p>
-                          Pendant ma formation en Télécommunications, j'ai conçu un robot télécommandé pour explorer et surveiller des zones inaccessibles ou dangereuses. Utilisant des cartes LoRa UCA pour l'émission et la réception, l'objectif était de créer un cahier des charges détaillé et d'étudier la faisabilité du projet en termes de portée, consommation et débit. Nous avons validé notre travail lors des séances encadrées. Le robot, contrôlé à distance, était équipé de capteurs pour mesurer la température, les gaz toxiques, la distance et l'humidité, transmettant les données en temps réel. Ce projet m'a permis de comprendre les défis des systèmes de communication à longue portée avec des contraintes énergétiques et de débit. J'ai appris à élaborer un cahier des charges précis et à évaluer la faisabilité technique d'un projet en étudiant la consommation énergétique et les performances des cartes LoRa.
-                        </p>
-                        <a href="Rapport-Projet-Lora.pdf" target="_blank" class="button button--flex button--small portfolio__button">
-                          Rapport <i class="uil uil-arrow-right button__icon"></i>
-                        </a>
-                      </div>
-                    </div>
-                    <!-- Ajoutez d'autres contenus de projet selon le même modèle -->
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-    
-          <!--==================== SERVICES 4 ====================-->
-          <div class="services__content">
-            <div>
-              <iconify-icon
-                icon="fluent-mdl2:my-network"
-                style="color: #59ccd9"
-                width="32"
-                height="45"
-              ></iconify-icon>
-              <h3 class="services__title">Communication<br /></h3>
-            </div>
-            <span class="button button--flex button--small button--link services__button">
-              Voir plus
-              <i class="uil uil-arrow-right button__icon"></i>
-            </span>
-    
-            <div class="services__modal">
-              <div class="services__modal-content">
-                <i class="uil uil-times services__modal-close"></i>
-                <h2 class="services__modal-title">Communication <br /></h2>
-                <div class="projet-web">
-                  <div class="services__modal-services carousel-container">
-                    <div class="services__modal-service carousel-item" id="projet2">
-                      <div class="image">
-                        <img src="guide_survie.PNG" alt="" class="portfolio__img" />
-                      </div>
-                      <div class="texte">
-                        <h4 class="portfolio__title">Guide de survie pour les R&T</h4>
-                        <p>
-                          Pendant ma formation en communication, j'ai eu l'opportunité de travailler sur la création du "Guide de survie des études en R&T". Ce projet avait pour objectif d'aider les futurs étudiants à s'adapter à leur nouvelle vie universitaire en leur fournissant des informations pratiques et utiles sur divers aspects de la formation.
-                          La rédaction du guide nous a permis de développer nos compétences en écriture, en travaillant sur des articles courts et informatifs, tout en utilisant un ton humoristique pour rendre le contenu plus engageant. Nous avons également appris à utiliser des outils de mise en page comme Canva pour créer un livret attrayant et professionnel.
-                          Ce projet m'a permis de développer des compétences essentielles en gestion de projet, en communication et en collaboration et en rédaction.
-                        </p>
-                        <a href="Guide-de-survie.pdf" target="_blank" class="button button--flex button--small portfolio__button">
-                          Demo <i class="uil uil-arrow-right button__icon"></i>
-                        </a>
-                      </div>
-                    </div>
-                    <!-- Ajoutez d'autres contenus de projet selon le même modèle -->
-                  </div>
-                </div>
-              </div>
+            <div class="carousel-controls">
+              <button class="modal-prev">&#10094;</button>
+              <button class="modal-next">&#10095;</button>
             </div>
           </div>
         </div>
-      </section>
-    </main>
-    
+      </div>
 
-    <!--==================== MAIN JS ====================-->
-    <script >
+      <!--==================== SERVICES 2: RESEAU ====================-->
+      <div class="services__content">
+        <div>
+          <iconify-icon icon="fluent-mdl2:my-network" style="color: #59ccd9" width="32" height="45"></iconify-icon>
+          <h3 class="services__title">Réseau<br /></h3>
+        </div>
+        <span class="button button--flex button--small button--link services__button" data-modal="reseau-modal">
+          Voir plus
+          <i class="uil uil-arrow-right button__icon"></i>
+        </span>
 
-        
-/*==================== MENU SHOW Y HIDDEN ====================*/
-const navMenu = document.getElementById("nav-menu"),
-  navToggle = document.getElementById("nav-toggle"),
-  navClose = document.getElementById("nav-close");
+        <!-- Modal Réseau -->
+        <div class="services__modal" id="reseau-modal">
+          <div class="services__modal-content">
+            <i class="uil uil-times services__modal-close" data-close="reseau-modal"></i>
+            <h2 class="services__modal-title">Réseau <br /></h2>
+            <div class="services__modal-services">
+              <div class="services__modal-service carousel-item">
+                <div class="image">
+                  <img src="sae21.PNG" alt="Création du réseau d'une PME" class="portfolio__img">
+                </div>
+                <div class="texte">
+                  <h4 class="portfolio__title">Création du réseau d'une PME</h4>
+                  <p>Pendant ma formation en Réseaux, j'ai eu l'opportunité de créer un réseau virtuel similaire à celui d'une PME, ce projet était encadré par un intervenant d' EUROCOM. L'objectif était de concevoir un réseau complet comprenant un firewall, une DMZ, ainsi que des services DHCP et DNS et du nat dynamique/statique pour sortir de l'entreprise et de la DMZ vers internet. Ce projet m'a permis de maîtriser la sécurisation des réseaux internes contre les menaces externes et d'assurer une gestion efficace des adresses IP et des noms de domaine. Grâce à ce projet, j'ai également acquis une compréhension approfondie de la conception d'une architecture réseau robuste et sécurisée. J'ai appris à tester rigoureusement la performance et la sécurité du réseau pour garantir son bon fonctionnement.</p>
+                  <a href="SAE21-Réseau-PME.pkt" target="_blank" class="button button--flex button--small portfolio__button">Fichier Pkt</a>
+                </div>
+              </div>
+              <div class="services__modal-service carousel-item">
+                <div class="image">
+                  <img src="SAE3.PNG" alt="Configuration des VLANs et HSRP" class="portfolio__img">
+                </div>
+                <div class="texte">
+                  <h4 class="portfolio__title">Conception d’un réseau multi-sites sécurisé</h4>
+                  <p>Dans ce projet, nous avons conçu un réseau interne sécurisé et redondant pour relier plusieurs sites distants. L'accent a été mis sur la redondance et l'équilibrage de charge afin d'assurer la disponibilité des services, même en cas de panne d'un équipement ou d'un lien. Concernant la sécurité, nous avons cherché un compromis entre protection des données et maintien de la fonctionnalité, en évitant de compromettre la performance et l’expérience utilisateur.
 
-/*===== MENU SHOW =====*/
-/* Validate if constant exists */
-if (navToggle) {
-  navToggle.addEventListener("click", () => {
-    navMenu.classList.add("show-menu");
-  });
-}
+                    La sécurité du réseau a été renforcée avec la mise en place de VPN IPSec entre les sites pour chiffrer les communications, et un VPN SSL permettant aux utilisateurs distants d'accéder aux ressources internes de manière sécurisée. Enfin, nous avons intégré un système de téléphonie IP multi-sites pour simplifier les communications internes entre les sites tout en réduisant les coûts.
+                    
+                    Ce projet a permis d’allier les concepts de sécurité, haute disponibilité, et performances réseau, en garantissant un fonctionnement fiable et adaptable à un environnement multi-sites.</p>
+                  <a href="TOPOLOGIE-RESEAU-SiteB-SUD-BORGHI_URSO_MELLANO.pdf" target="_blank" class="button button--flex button--small portfolio__button">Fichier Pkt</a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-controls">
+              <button class="modal-prev">&#10094;</button>
+              <button class="modal-next">&#10095;</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
-/*===== MENU HIDDEN =====*/
-/* Validate if constant exists */
-if (navClose) {
-  navClose.addEventListener("click", () => {
-    navMenu.classList.remove("show-menu");
-  });
-}
+      <!--==================== SERVICES 3: TELECOMMUNICATIONS ====================-->
+      <div class="services__content">
+        <div>
+          <iconify-icon icon="fluent-mdl2:my-network" style="color: #59ccd9" width="32" height="45"></iconify-icon>
+          <h3 class="services__title">Télécommunications<br /></h3>
+        </div>
+        <span class="button button--flex button--small button--link services__button" data-modal="telecom-modal">
+          Voir plus
+          <i class="uil uil-arrow-right button__icon"></i>
+        </span>
+
+        <!-- Modal Télécommunications -->
+        <div class="services__modal" id="telecom-modal">
+          <div class="services__modal-content">
+            <i class="uil uil-times services__modal-close" data-close="telecom-modal"></i>
+            <h2 class="services__modal-title">Télécommunications <br /></h2>
+            <div class="services__modal-services">
+              <div class="services__modal-service carousel-item">
+                <div class="image">
+                  <img src="LoRa.jpg" alt="Etude d'un système sans fil" class="portfolio__img">
+                </div>
+                <div class="texte">
+                  <h4 class="portfolio__title">Etude d'un système sans fil</h4>
+                  <p>Pendant ma formation en Télécommunications, j'ai conçu un robot télécommandé pour explorer et surveiller des zones inaccessibles ou dangereuses. Utilisant des cartes LoRa UCA pour l'émission et la réception, l'objectif était de créer un cahier des charges détaillé et d'étudier la faisabilité du projet en termes de portée, consommation et débit. Nous avons validé notre travail lors des séances encadrées. Le robot, contrôlé à distance, était équipé de capteurs pour mesurer la température, les gaz toxiques, la distance et l'humidité, transmettant les données en temps réel. Ce projet m'a permis de comprendre les défis des systèmes de communication à longue portée avec des contraintes énergétiques et de débit. J'ai appris à élaborer un cahier des charges précis et à évaluer la faisabilité technique d'un projet en étudiant la consommation énergétique et les performances des cartes LoRa.</p>
+                  <a href="Rapport-Projet-Lora.pdf" target="_blank" class="button button--flex button--small portfolio__button">Rapport</a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-controls">
+              <button class="modal-prev">&#10094;</button>
+              <button class="modal-next">&#10095;</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--==================== SERVICES 4: COMMUNICATION ====================-->
+      <div class="services__content">
+        <div>
+          <iconify-icon icon="fluent-mdl2:my-network" style="color: #59ccd9" width="32" height="45"></iconify-icon>
+          <h3 class="services__title">Communication<br /></h3>
+        </div>
+        <span class="button button--flex button--small button--link services__button" data-modal="comm-modal">
+          Voir plus
+          <i class="uil uil-arrow-right button__icon"></i>
+        </span>
+
+        <!-- Modal Communication -->
+        <div class="services__modal" id="comm-modal">
+          <div class="services__modal-content">
+            <i class="uil uil-times services__modal-close" data-close="comm-modal"></i>
+            <h2 class="services__modal-title">Communication <br /></h2>
+            <div class="services__modal-services">
+              <div class="services__modal-service carousel-item">
+                <div class="image">
+                  <img src="guide_survie.PNG" alt="Guide de survie pour les R&T" class="portfolio__img">
+                </div>
+                <div class="texte">
+                  <h4 class="portfolio__title">Guide de survie pour les R&T</h4>
+                  <p>Pendant ma formation en communication, j'ai eu l'opportunité de travailler sur la création du "Guide de survie des études en R&T". Ce projet avait pour objectif d'aider les futurs étudiants à s'adapter à leur nouvelle vie universitaire en leur fournissant des informations pratiques et utiles sur divers aspects de la formation. La rédaction du guide nous a permis de développer nos compétences en écriture, en travaillant sur des articles courts et informatifs, tout en utilisant un ton humoristique pour rendre le contenu plus engageant. Nous avons également appris à utiliser des outils de mise en page comme Canva pour créer un livret attrayant et professionnel. Ce projet m'a permis de développer des compétences essentielles en gestion de projet, en communication et en collaboration et en rédaction.</p>
+                  <a href="Guide-de-survie.pdf" target="_blank" class="button button--flex button--small portfolio__button">Demo</a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-controls">
+              <button class="modal-prev">&#10094;</button>
+              <button class="modal-next">&#10095;</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+            <!-- Nouvelle ligne de cartes -->
+    <div class="services__container container grid">
 
 
-/*==================== REMOVE MENU MOBILE ====================*/
-const navLink = document.querySelectorAll(".nav__link");
+  <!--==================== SERVICES 5: CYbersecurité ====================-->
+      <div class="services__content">
+        <div>
+          <iconify-icon icon="fluent-mdl2:my-network" style="color: #59ccd9" width="32" height="45"></iconify-icon>
+          <h3 class="services__title">Cybersécurité<br /></h3>
+        </div>
+        <span class="button button--flex button--small button--link services__button" data-modal="web-modal">
+          Voir plus
+          <i class="uil uil-arrow-right button__icon"></i>
+        </span>
 
-function linkAction() {
-  const navMenu = document.getElementById("nav-menu");
-  // When we click on each nav__link, we remove the show-menu class
-  navMenu.classList.remove("show-menu");
-}
-navLink.forEach((n) => n.addEventListener("click", linkAction));
+        <!-- Modal Web -->
+        <div class="services__modal" id="web-modal">
+          <div class="services__modal-content">
+            <i class="uil uil-times services__modal-close" data-close="web-modal"></i>
+            <h2 class="services__modal-title">Cybersécurité <br /></h2>
+            <div class="services__modal-services">
+              <div class="services__modal-service carousel-item">
+                <div class="image">
+                  <img src="cyber.jpg" alt="Nouveau Projet" class="portfolio__img">
+                </div>
+                <div class="texte">
+                  <h4 class="portfolio__title">Projet de Pentest – TP</h4>
+                  <p>Le TP portait sur l'analyse d'une machine virtuelle vulnérable accessible via un VPN. Après une phase de reconnaissance, plusieurs failles ont été découvertes, notamment une injection SQL permettant d’accéder à la base de données.
 
-/*==================== SERVICES MODAL ====================*/
-const modalViews = document.querySelectorAll(".services__modal"),
-  modalBtns = document.querySelectorAll(".services__button"),
-  modalCloses = document.querySelectorAll(".services__modal-close");
+                    L’exploitation a continué avec un service de transfert de fichiers TFTP exposé, permettant de récupérer un fichier protégé. Enfin, une vulnérabilité dans un programme en C a été exploitée pour obtenir un accès administrateur via un buffer overflow.</p>
+                  <a href="TP2-Pentesting-MELLANO-Lancelot.pdf" target="_blank" class="button button--flex button--small portfolio__button">En savoir plus</a>
+                </div>
+              </div>
 
-let modal = function (modalClick) {
-  modalViews[modalClick].classList.add("active-modal");
-};
 
-modalBtns.forEach((modalBtn, i) => {
-  modalBtn.addEventListener("click", () => {
-    modal(i);
+              <div class="services__modal-service carousel-item">
+                <div class="image">
+                  <img src="cyber2.jpg" alt="image cybersécurité" class="portfolio__img">
+                </div>
+                <div class="texte">
+                  <h4 class="portfolio__title">Projet de Pentest – TP</h4>
+                  <p>Le TP portait sur l’analyse d’une machine virtuelle située sur un réseau privé accessible via un VPN. Après une phase de reconnaissance, une injection SQL a été découverte sur un site web, permettant d’obtenir un accès à la base de données et de récupérer un flag intermédiaire.
+
+                    L’exploitation s’est poursuivie avec un service TFTP exposé sur le réseau, qui a permis de télécharger un fichier ZIP protégé. Ce fichier, chiffré avec une méthode vulnérable, a ensuite été déchiffré, révélant des informations supplémentaires. Chaque étape a permis d’illustrer des faiblesses courantes dans les configurations réseau et la gestion des services.</p>
+                  <a href="Rapport_Pentest_TP3_MELLANO-Lancelot-ALT.pdf" target="_blank" class="button button--flex button--small portfolio__button">Demo</a>
+                </div>
+              </div>
+
+              <div class="services__modal-service carousel-item">
+                <div class="image">
+                  <img src="cyber3.jpg" alt="image cybersécurité" class="portfolio__img">
+                </div>
+                <div class="texte">
+                  <h4 class="portfolio__title">Projet de Pentest – TP</h4>
+                  <p>Le TP consistait à identifier et exploiter des failles de sécurité sur une machine Windows exposée. Après une reconnaissance initiale, des vulnérabilités critiques ont été découvertes, notamment un service FTP mal configuré permettant un accès anonyme, une injection SQL sur le service HTTP, ainsi que la faille EternalBlue, connue pour permettre l’exécution de code à distance via le protocole SMB.
+
+                    L'exploitation a permis d'accéder à des fichiers de validation intermédiaires et d'obtenir un accès administrateur grâce à EternalBlue, illustrant les risques majeurs liés aux systèmes non mis à jour et mal configurés.</p>
+                  <a href="Rapport_Pentest_TP4_MELLANO-Lancelot_ALT.pdf" target="_blank" class="button button--flex button--small portfolio__button">Demo</a>
+                </div>
+              </div>
+
+              <div class="services__modal-service carousel-item">
+                <div class="image">
+                  <img src="osint.jpg" alt="image cybersécurité" class="portfolio__img">
+                </div>
+                <div class="texte">
+                  <h4 class="portfolio__title">OSINT: Analyse d’une Personnalité Publique</h4>
+                  <p>Le travail portait sur l'analyse OSINT d'une personnalité publique dans le domaine de la cybersécurité. À partir de sources légales et accessibles en ligne, l'objectif était de reconstituer son parcours professionnel et d’identifier des éléments plus personnels comme ses hobbies et sa localisation.
+
+                    Le rapport a permis de découvrir plusieurs détails, notamment son historique académique, ses postes occupés au sein d'agences de cybersécurité, ainsi que ses engagements dans des initiatives européennes. L'analyse a également permis d'explorer ses centres d'intérêt, notamment la course à pied et ses implications familiales, en mettant en avant les limites de l'OSINT pour préserver la vie privée.</p>
+                  <a href="Rapport-TD-OSINT-Mellano-Lancelot.pdf" target="_blank" class="button button--flex button--small portfolio__button">Demo</a>
+                </div>
+              </div>
+
+              <div class="services__modal-service carousel-item">
+                <div class="image">
+                  <img src="saepentest.png" alt="image cybersécurité" class="portfolio__img">
+                </div>
+                <div class="texte">
+                  <h4 class="portfolio__title">Audit de Sécurité</h4>
+                  <p>Dans le cadre de ce projet, l’audit s’est concentré sur deux machines principales : une machine Samba accessible en interne et une machine WebApp située dans un réseau isolé. Le scénario simulait une attaque ciblée avec pivoting.
+
+                    L’attaque a débuté par la compromission de Samba en exploitant une faille critique, permettant l’exécution de commandes à distance. Une fois le contrôle de cette machine obtenu, l’accès persistant a été mis en place pour maintenir une connexion à long terme.
+                    
+                    Ensuite, à partir de Samba, le pivoting a été réalisé pour atteindre WebApp dans un sous-réseau distinct. L’objectif final était de prendre le contrôle complet de WebApp en identifiant et exploitant ses vulnérabilités.</p>
+                  <a href="Projet-Pentest.zip" target="_blank" class="button button--flex button--small portfolio__button">Demo</a>
+                </div>
+              </div>
+
+
+
+
+            </div>
+            <div class="carousel-controls">
+              <button class="modal-prev">&#10094;</button>
+              <button class="modal-next">&#10095;</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+            <!--==================== SERVICES 5: Anglais ====================-->
+            <div class="services__content">
+              <div>
+                <iconify-icon icon="fluent-mdl2:my-network" style="color: #59ccd9" width="32" height="45"></iconify-icon>
+                <h3 class="services__title">Anglais<br /></h3>
+              </div>
+              <span class="button button--flex button--small button--link services__button" data-modal="nouvelle-modal">
+                Voir plus
+                <i class="uil uil-arrow-right button__icon"></i>
+              </span>
+      
+              <!-- Modal Nouvelle Carte -->
+              <div class="services__modal" id="nouvelle-modal">
+                <div class="services__modal-content">
+                  <i class="uil uil-times services__modal-close" data-close="nouvelle-modal"></i>
+                  <h2 class="services__modal-title">Anglais <br /></h2>
+                  <div class="services__modal-services english-video-project">
+                    <div class="english-video-project__content carousel-item">
+                      <div class="english-video-project__texte">
+                        <h4 class="portfolio__title">English CV Video Project</h4>
+                        <p>Pendant ce projet d'anglais, j'ai dû réaliser une vidéo en anglais où je présente mon CV de manière professionnelle. Ce projet m'a permis de pratiquer la communication orale en anglais tout en mettant en avant mes compétences et mon parcours de manière claire et concise.</p>
+                      </div>
+                      <div class="english-video-project__video-container">
+                        <video controls class="english-video-project__video">
+                          <source src="Cv-Anglais-Video.mov" type="video/mp4">
+                          Your browser does not support the video tag.
+                        </video>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  
+                  <div class="carousel-controls">
+                    <button class="modal-prev">&#10094;</button>
+                    <button class="modal-next">&#10095;</button>
+                  </div>
+                </div>
+              </div>
+      
+      
+            </div>
+
+                  <!--==================== SERVICES 7: Professionel ====================-->
+                  <div class="services__content">
+                    <div>
+                      <iconify-icon icon="fluent-mdl2:my-network" style="color: #59ccd9" width="32" height="45"></iconify-icon>
+                      <h3 class="services__title">Projet Professionnel <br /></h3>
+                    </div>
+                    <span class="button button--flex button--small button--link services__button" data-modal="web-modal">
+                      Voir plus
+                      <i class="uil uil-arrow-right button__icon"></i>
+                    </span>
+            
+                    <!-- Modal Web -->
+                    <div class="services__modal" id="web-modal">
+                      <div class="services__modal-content">
+                        <i class="uil uil-times services__modal-close" data-close="web-modal"></i>
+                        <h2 class="services__modal-title">Projet Professionnel en Entreprise<br /></h2>
+                        <div class="services__modal-services">
+                          <div class="services__modal-service carousel-item">
+                            <div class="image">
+                              <img src="siem.png" alt="Nouveau Projet" class="portfolio__img">
+                            </div>
+                            <div class="texte">
+                              <h4 class="portfolio__title">Sécurisation des Infrastructures IT avec un SIEM</h4>
+                              <p>Dans le cadre de mon alternance, j'ai participé à l'analyse et à la préparation du déploiement d'une solution SIEM (Security Information and Event Management) pour la mairie de Sainte-Maxime. L'objectif principal était d'améliorer la détection et la gestion des incidents de sécurité à travers une plateforme centralisée capable de collecter, corréler et analyser les logs provenant de divers équipements réseau et systèmes.
+
+                                Après avoir étudié plusieurs solutions disponibles sur le marché, nous avons retenu la solution Securonix pour sa capacité à utiliser l'intelligence artificielle dans l'analyse comportementale des événements. Cette solution permettra notamment de repérer les activités anormales, de prioriser les alertes en fonction de leur criticité et d'automatiser certaines réponses aux incidents. Le projet inclut également l'intégration des sources de logs critiques comme les pare-feu, les serveurs Windows, les postes de travail et les services cloud utilisés par la mairie.</p>
+                              <a href="siem.pdf" target="_blank" class="button button--flex button--small portfolio__button">En savoir plus</a>
+                            </div>
+                          </div>
+            
+            
+                          <div class="services__modal-service carousel-item">
+                            <div class="image">
+                              <img src="switch.jpg" alt="image cybersécurité" class="portfolio__img">
+                            </div>
+                            <div class="texte">
+                              <h4 class="portfolio__title">Automatisation de la Supervision des Switchs Réseau</h4>
+                              <p>Dans le cadre de mon alternance, j'ai mis en place des scripts automatisés pour vérifier chaque nuit l'état des switchs réseau enregistrés. Ces scripts permettent de s'assurer que les équipements sont toujours opérationnels, que la connexion SSH fonctionne correctement, et que les configurations n'ont pas été modifiées de manière malveillante.
+
+                                Chaque matin, un rapport est généré, indiquant si les switchs sont accessibles, si des changements de configuration ont été détectés, ou si tout est conforme aux attentes. En cas d'anomalie, des alertes sont déclenchées, permettant aux équipes IT d'intervenir rapidement.
+                                
+                                Pour garantir la sécurité de la solution, toutes les informations sensibles, comme les identifiants de connexion ou les configurations enregistrées, sont cryptées ou hachées à l’aide de sommes MD5. Ce projet permet de renforcer la sécurité des équipements réseau tout en facilitant leur gestion quotidienne grâce à une surveillance automatisée et fiable.
+                              </p>
+                            </div>
+                          </div>
+            
+
+            
+                          <div class="services__modal-service carousel-item">
+                            <div class="image">
+                              <img src="app-python.jpg" alt="image cybersécurité" class="portfolio__img">
+                            </div>
+                            <div class="texte">
+                              <h4 class="portfolio__title">Dispatch Sharp</h4>
+                              <p>Dans le cadre de mon alternance, j'ai développé une application Python appelée Dispatch Sharp, destinée à faciliter la gestion des livraisons et le dispatching des équipements informatiques au sein de mon entreprise.
+
+                                L'application se base sur un fichier Excel partagé sur un Google Drive qui sert de base de données centrale. Lorsqu'un produit informatique est reçu, l'application permet d'entrer le numéro de série inscrit sur l'équipement. En croisant ces informations avec le fichier Excel, l'application identifie automatiquement la destination ou la bannette de livraison adéquate, afin que le produit soit acheminé au bon endroit.
+                                
+                                Ce projet a permis de simplifier et d'automatiser le processus de réception et de dispatching des équipements, tout en réduisant les erreurs humaines liées à la gestion manuelle. Il m'a également permis de renforcer mes compétences en Python, en manipulation de fichiers Excel, ainsi qu'en intégration avec des services cloud comme Google Drive.</p>
+                            </div>
+                          </div>
+
+                          <div class="services__modal-service carousel-item">
+                            <div class="image">
+                              <img src="topo.jpg" alt="image cybersécurité" class="portfolio__img">
+                            </div>
+                            <div class="texte">
+                              <h4 class="portfolio__title">Topologie du Réseau</h4>
+                              <p>Dans le cadre de mon alternance, j'ai travaillé sur un projet de création d'une documentation complète de la topologie réseau de l'entreprise. L'objectif de ce projet était d'optimiser la gestion du réseau en créant une référence claire et détaillée de toute l'infrastructure, incluant les équipements, les adresses IP, les VLANs, les configurations des routeurs, switches, firewalls, ainsi que les connexions VPN.
+
+                                Ce travail m'a permis de mieux comprendre l'architecture réseau existante tout en identifiant des axes d'amélioration sur la gestion des configurations. Le document créé sert désormais de référence technique pour les administrateurs réseau, facilitant les interventions et garantissant une meilleure performance opérationnelle.</p>
+                            </div>
+                          </div>
+            
+                         
+            
+            
+            
+            
+                        </div>
+                        <div class="carousel-controls">
+                          <button class="modal-prev">&#10094;</button>
+                          <button class="modal-next">&#10095;</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+    </div>
+
+  </section>
+</main>
+
+<script>
+// Fonctionnalité du carousel
+const modals = document.querySelectorAll('.services__modal');
+const modalButtons = document.querySelectorAll('.services__button');
+const closeButtons = document.querySelectorAll('.services__modal-close');
+const prevButtons = document.querySelectorAll('.modal-prev');
+const nextButtons = document.querySelectorAll('.modal-next');
+
+modalButtons.forEach((btn, index) => {
+  btn.addEventListener('click', () => {
+    modals[index].classList.add('active-modal');
+    showSlides(modals[index], 0);
   });
 });
 
-modalCloses.forEach((modalClose) => {
-  modalClose.addEventListener("click", () => {
-    modalViews.forEach((modalView) => {
-      modalView.classList.remove("active-modal");
-    });
+closeButtons.forEach((btn, index) => {
+  btn.addEventListener('click', () => {
+    modals[index].classList.remove('active-modal');
   });
 });
 
-
-/* modal portfolio */
-
-const modalContent = document.querySelector('.services__modal-content');
-const modalServices = modalContent.querySelectorAll('.services__modal-service');
-const carouselIndicators = document.querySelector('.carousel-indicators');
-
-// Création des indicateurs en fonction du nombre de services
-modalServices.forEach((service, index) => {
-  let indicator = document.createElement('span');
-  indicator.classList.add('indicator');
-  indicator.dataset.index = index;
-  indicator.addEventListener('click', () => {
-    setActiveService(index);
+prevButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const modal = btn.closest('.services__modal');
+    changeSlide(modal, -1);
   });
-  carouselIndicators.appendChild(indicator);
 });
 
-let activeServiceIndex = 0;
-
-// Fonction pour mettre à jour les indicateurs et le service affiché
-function setActiveService(newIndex) {
-  // Mettre à jour les indicateurs
-  document.querySelectorAll('.carousel-indicators .indicator').forEach((indicator, index) => {
-    if (index === newIndex) {
-      indicator.classList.add('active');
-    } else {
-      indicator.classList.remove('active');
-    }
+nextButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const modal = btn.closest('.services__modal');
+    changeSlide(modal, 1);
   });
+});
 
-  // Mettre à jour le service affiché
-  activeServiceIndex = newIndex;
-  updateModalDisplay();
-}
-
-function updateModalDisplay() {
-  // Masquer tous les services et afficher le service actif
-  modalServices.forEach((service, index) => {
-    service.style.display = (index === activeServiceIndex) ? 'flex' : 'none';
+function showSlides(modal, index) {
+  const slides = modal.querySelectorAll('.carousel-item');
+  slides.forEach((slide, i) => {
+    slide.style.display = i === index ? 'flex' : 'none';
   });
+  modal.dataset.currentSlide = index;
 }
 
-// Fonction pour afficher le service suivant/précédent avec mise à jour des indicateurs
-function showNextService() {
-  setActiveService((activeServiceIndex + 1) % modalServices.length);
+function changeSlide(modal, direction) {
+  const slides = modal.querySelectorAll('.carousel-item');
+  let currentIndex = parseInt(modal.dataset.currentSlide);
+  currentIndex = (currentIndex + direction + slides.length) % slides.length;
+  showSlides(modal, currentIndex);
 }
+</script>
 
-function showPrevService() {
-  setActiveService((activeServiceIndex - 1 + modalServices.length) % modalServices.length);
-}
-
-// Sélectionner les boutons et attacher les événements
-document.querySelector('.modal-prev').addEventListener('click', showPrevService);
-document.querySelector('.modal-next').addEventListener('click', showNextService);
-
-// Initialisation pour afficher le premier service et mettre à jour les indicateurs
-setActiveService(activeServiceIndex);
-    </script>
-    
-
-
-
-  </body>
+</body>
 </html>
+
