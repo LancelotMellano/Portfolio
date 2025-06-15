@@ -91,15 +91,23 @@ body {
 
   .skills__container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row; /* au lieu de column */
     justify-content: center;
-    align-items: center;
-    row-gap: 2rem;
-    margin: 0 auto;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-wrap: wrap;
     padding: 2rem;
     background-color: #16212273;
     border-radius: 80px;
     box-shadow: 0 24px 36px rgba(0, 0, 0, 0.1);
+    margin-right: 15%;
+    margin-left: 15%;
+  }
+
+  .skills__column {
+    flex: 1;
+    min-width: 280px;
+    padding: 1rem;
   }
 
   
@@ -177,9 +185,49 @@ body {
   }
   
   
-  .skills__bar {
-    background-color: var(--first-color-lighter);
+  .skills__bar_intermediaire {
+    background-color: rgba(255, 217, 0, 0.411);
+    width: 75%; /* Ajuste la largeur de la barre de progression */
+    border-radius: 5px;
+    height: 8px;
   }
+
+    .skills__percentage_intermediaire {
+    display: block;
+    background-color: gold;
+    height: 8px;
+    border-radius: 5px;
+  }
+
+    .skills__bar_competent {
+    background-color: rgba(50, 205, 50, 0.466);
+    width: 75%; /* Ajuste la largeur de la barre de progression */
+    border-radius: 5px;
+    height: 8px;
+  }
+
+    .skills__percentage_competent {
+    display: block;
+    height: 8px;
+    background-color: limegreen;
+    border-radius: 5px;
+  }
+
+    .skills__bar_avance {
+    background-color: rgba(30, 143, 255, 0.466);
+    width: 75%; /* Ajuste la largeur de la barre de progression */
+    border-radius: 5px;
+    height: 8px;
+  }
+
+    .skills__percentage_avance {
+    display: block;
+    background-color: dodgerblue;
+    height: 8px;
+    border-radius: 5px;
+  }
+
+
   
   .skills__percentage {
     display: block;
@@ -256,3 +304,45 @@ body {
     transform: rotate(-180deg);
   }
   
+.skill__legend {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  font-size: 0.9rem;
+  color: #e0e0e0;
+  overflow-x: auto;  /* Ajoute un scroll horizontal si trop large */
+  padding-bottom: 0.5rem;
+  max-width: 100%;   /* Limite à la largeur du conteneur parent */
+}
+
+.skill__legend::-webkit-scrollbar {
+  height: 6px;
+}
+.skill__legend::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 10px;
+}
+.skill__legend::-webkit-scrollbar-track {
+  background-color: #333;
+}
+
+
+.skill__legend span {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap; /* force le texte à rester sur une seule ligne */
+  gap: 0.4rem;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+

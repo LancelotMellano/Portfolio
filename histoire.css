@@ -109,7 +109,7 @@ a {
 }
 
 img {
-  width: 100%;
+  width: 120%;
   height: auto;
 }
 
@@ -121,6 +121,11 @@ img {
 
 .section__title {
   font-size: var(--h1-font-size);
+}
+
+.section__title_titre{
+  font-size: var(--h1-font-size);
+  text-align: center;
 }
 
 .section__subtitle {
@@ -255,6 +260,26 @@ img {
 
 
 
+.portfolio-intro {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.portfolio-intro__title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.portfolio-intro__text {
+  color: #b0b0b0;
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: justify;
+}
 
 
 .home__title {
@@ -355,7 +380,9 @@ img {
 
 
 
-
+.sectionne{
+  margin-bottom: 1.2%;
+}
 
 /* About section */
 .about__container {
@@ -370,6 +397,7 @@ img {
   height: auto;
   border-radius: 0.5rem;
   margin-left: 20%;
+  margin-bottom: 70px;
 }
 
 /* Qualification & Skills sections */
@@ -602,6 +630,23 @@ img {
   transform: rotate(-180deg);
 }
 
+.download-button {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #ccc;
+  padding: 0.4rem 0.9rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.download-button:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  cursor: pointer;
+}
 
 /* Passion section */
 .passion__container {
@@ -610,6 +655,8 @@ img {
   column-gap: 5rem;
   margin-right: 6%;
   margin-left: 6%;
+
+
 }
 
 .passion__img {
@@ -649,6 +696,9 @@ img {
   align-items: center;
   gap: 2rem;
   margin-top: 2rem;
+  margin-bottom: 7%;
+
+
 }
 
 .passion__card {
@@ -670,7 +720,7 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 10px;
+
 }
 
 .passion__back {
@@ -923,6 +973,7 @@ img {
       background-color: #16212273;
       border-radius: 80px;
       box-shadow: 0 24px 36px rgba(0, 0, 0, 0.1);
+      margin-bottom: 2%;
     }
     .containerHis {
       margin-left: 12%;
@@ -933,11 +984,7 @@ img {
     .body {
       margin: 0;
     }
-    .sectionne {
-      padding: 6rem 0 2rem;
-      margin-bottom: 7%;
-      
-    }
+ 
     .section {
       padding: 0;
       margin: 0;
@@ -1009,9 +1056,8 @@ img {
 
 
     .about__description {
-      text-align: initial;
+      text-align: justify;
       padding: 20px;
-      border-radius: 15px;
       color: rgba(0, 0, 0, 0.808);
       background: linear-gradient(135deg, rgba(255, 255, 255, 0.6), rgba(245, 245, 245, 0.8));
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -1030,6 +1076,38 @@ img {
     
 
   
+    .scroll-down {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 5% ;
+    }
+    
+    .scroll-down a {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 60px;
+      height: 60px;
+      border: 2px solid white;
+      border-radius: 50%;
+      color: white;
+      font-size: 2rem;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    
+    .scroll-down a:hover {
+      background-color: white;
+      color: #162122;
+      transform: translateY(3px);
+      box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+    }
+    
+    .arrow {
+      display: block;
+      line-height: 1;
+    }
     
   
     

@@ -145,16 +145,23 @@ img {
 .section {
   padding: 2rem 0 4rem;
   margin-bottom: 40px;
+  
 }
-
+.color_section {
+  background-color: #1e2b2e;
+  border-bottom: 2px solid white; /* épaisseur et couleur de la bordure */
+  border-top: 2px solid white;
+}
 .section__title {
-  font-size: var(--h1-font-size);
+  font-size: 20px;
+
 }
 
 .section__subtitle {
   display: block;
   font-size: var(--small-font-size);
   margin-bottom: var(--mb-2);
+  color: #00bcd4;
 }
 
 .section__title,
@@ -375,6 +382,7 @@ img {
 .home__title {
     font-size: 2.1rem;
   
+  
 }
 
 .home__subtitle {
@@ -386,6 +394,7 @@ img {
 
 .home__description {
   margin-bottom: var(--mb-2);
+  text-align: justify;
 }
 
 .home__scroll {
@@ -655,6 +664,53 @@ img {
   color: var(--first-color);
 }
 
+
+
+.portfolio-intro {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.portfolio-intro__title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.portfolio-intro__text {
+  color: #b0b0b0;
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+
+.portfolio-separator {
+  text-align: center;
+  margin: 4rem 0 2rem;
+  position: relative;
+}
+
+.portfolio-separator h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #59ccd9;
+  position: relative;
+}
+
+.portfolio-separator::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 2px;
+  background-color: #59ccd9;
+  margin: 1rem auto 0;
+}
+
 /*==================== SERVICES ====================*/
 .services__container {
   gap: 1.5rem;
@@ -678,8 +734,24 @@ img {
   margin: 10px; /* Ajoutez une marge pour espacer les blocs si nécessaire */
 }
 
+.section-subtitle{
+  color: #e7e7e7;
+}
+.project-tags {
+  margin: 0.5rem 0 1rem;
+}
 
-
+.tag {
+  display: inline-block;
+  background-color: #59ccd9;
+  color: #0d1b1e;
+  font-size: 0.75rem;
+  font-weight: bold;
+  border-radius: 12px;
+  padding: 0.2rem 0.6rem;
+  margin-right: 0.4rem;
+  margin-bottom: 0.4rem;
+}
 
 
 
