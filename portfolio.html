@@ -61,20 +61,35 @@
 
       </nav>
     </header>
+    <br>
+    <br><br><br>
 
 <!--==================== MAIN ====================-->
 <main class="main">
+
+  <section class="portfolio-intro">
+    <div class="container">
+      <p class="portfolio-intro__text">
+        Retrouvez ici l’ensemble des projets auxquels j’ai participé, aussi bien dans le cadre de mes études que durant mes expériences professionnelles en alternance.
+      </p>
+    </div>
+  </section>
+
+
   <!--==================== Portfolio ====================-->
-  <section class="services section" id="portfolio">
-    <h2 class="section__title">Portfolio</h2>
-    <span class="section__subtitle">Travaux les plus récents</span>
+  <section class="services section color_section" id="portfolio">
+    <h2 class="section__title">Projet d'études</h2>
+    <span class="section__subtitle">Voici les projets que j'ai réalisé en BUT R&T à Sophia-Antipolis</span>
 
     <div class="services__container container grid">
-      <!--==================== SERVICES 1: WEB ====================-->
+
+
+
+        <!--==================== SERVICES 5: CYbersecurité ====================-->
       <div class="services__content">
         <div>
           <iconify-icon icon="fluent-mdl2:my-network" style="color: #59ccd9" width="32" height="45"></iconify-icon>
-          <h3 class="services__title">Web<br /></h3>
+          <h3 class="services__title">Cybersécurité<br /></h3>
         </div>
         <span class="button button--flex button--small button--link services__button" data-modal="web-modal">
           Voir plus
@@ -85,28 +100,256 @@
         <div class="services__modal" id="web-modal">
           <div class="services__modal-content">
             <i class="uil uil-times services__modal-close" data-close="web-modal"></i>
-            <h2 class="services__modal-title">Web <br /></h2>
+            <h2 class="services__modal-title">Cybersécurité <br /></h2>
             <div class="services__modal-services">
-              <div class="services__modal-service carousel-item">
+                            <div class="services__modal-service carousel-item">
                 <div class="image">
-                  <img src="thales.PNG" alt="Application web sur Raspberry" class="portfolio__img">
+                  <img src="saepentest.png" alt="image cybersécurité" class="portfolio__img">
                 </div>
                 <div class="texte">
-                  <h4 class="portfolio__title">Application web sur Raspberry</h4>
-                  <p>Durant la première année au BUT R&T, nous avons eu la chance de participer à un projet en collaboration avec Thales Alenia Space. L'objectif était d'aider les équipes de tests avionniques en leur proposant une solution qui leur permettrait de partager rapidement et efficacement les bonnes pratiques lié à leurs tests. Nous leur avons conçu un site web dynamique utilisant comme language de programmation HTML, CSS, Php, Python et MySQL. Ce site était hébergé sur un serveur local tournant sur un Raspberry. Il nous a permis de comprendre la base du fonctionnement d'un vrai site web professionnels avec une relation entre le serveur web, la base de données et le site web. De plus, nous avons dû prévoir des mesures de sécurité pour protéger le site web en cas d'attaque de personnes malveillantes.</p>
-                  <a href="https://github.com/xxIslexx/GITHUB" target="_blank" class="button button--flex button--small portfolio__button">Demo</a>
+                  <h4 class="portfolio__title">Audit de sécurité : Pivoting et multi-cibles</h4>
+                
+                  <!-- Étiquettes de compétences -->
+                  <div class="project-tags">
+                    <span class="tag">#Pentest</span>
+                    <span class="tag">#Pivoting</span>
+                    <span class="tag">#Samba</span>
+                    <span class="tag">#WebApp</span>
+                    <span class="tag">#Post-Exploitation</span>
+                  </div>
+                
+                  <!-- Objectif -->
+                  <h5 class="section-subtitle">🎯 Objectif</h5>
+                  <p>
+                    Simuler une attaque avancée sur une infrastructure en plusieurs segments réseau, en compromettant d’abord une machine interne avant de pivoter vers une cible isolée.
+                  </p>
+                
+                  <!-- Réalisation -->
+                  <h5 class="section-subtitle">🛠️ Réalisation</h5>
+                  <p>
+                    L’audit a commencé par l’exploitation d’une faille critique sur un serveur Samba, donnant accès à un shell distant. Après établissement d’un accès persistant, un pivoting a permis de scanner et atteindre une WebApp placée dans un sous-réseau différent, jusqu’à son exploitation complète.
+                  </p>
+                
+                  <!-- Compétences -->
+                  <h5 class="section-subtitle">💡 Compétences acquises</h5>
+                  <p>
+                    Ce projet m’a permis d’acquérir une vision concrète des phases de post-exploitation, de persistance et de pivoting dans un environnement cloisonné. Il a renforcé mes compétences en analyse réseau et en planification d’attaques ciblées.
+                  </p>
+                
+                  <!-- Lien archive -->
+                  <a href="Projet-Pentest.zip" target="_blank" class="button button--flex button--small portfolio__button">Fichier zip</a>
                 </div>
+                
               </div>
+
               <div class="services__modal-service carousel-item">
                 <div class="image">
-                  <img src="sitejeux.png" alt="Site web des jeux vidéo" class="portfolio__img">
+                  <img src="audit_web.png" alt="image cybersécurité" class="portfolio__img">
                 </div>
                 <div class="texte">
-                  <h4 class="portfolio__title">Site web des jeux vidéo</h4>
-                  <p>Mon premier site web fut était axé sur les jeux vidéo. Ce projet m'a permis de découvrir les bases de la création de sites web en utilisant des langages de programmation tels que HTML, CSS, et un peu de JavaScript. En développant ce site, j'ai appris à structurer une page web, à la styliser pour la rendre attrayante et à intégrer des éléments interactifs avec JavaScript. Cette expérience a été fondamentale pour comprendre les principes de base du développement web et a marqué le début de mon parcours dans ce domaine.</p>
-                  <a href="http://isis.unice.fr/~ml306535/acces/Site/Accueil.html" target="_blank" class="button button--flex button--small portfolio__button">Demo</a>
+                  <h4 class="portfolio__title">Plateforme SaaS d’audit web automatisé</h4>
+                
+                  <!-- Étiquettes de compétences -->
+                  <div class="project-tags">
+                    <span class="tag">#Cybersécurité</span>
+                    <span class="tag">#Audit Web</span>
+                    <span class="tag">#SaaS</span>
+                    <span class="tag">#Open Source</span>
+                    <span class="tag">#Automatisation</span>
+                  </div>
+                
+                  <!-- Objectif -->
+                  <h5 class="section-subtitle">🎯 Objectif</h5>
+                  <p>
+                    Concevoir une plateforme accessible pour auditer automatiquement la sécurité de sites web en mode boîte noire. Le but : simplifier la détection de vulnérabilités pour les TPE/PME sans expertise technique.
+                  </p>
+                
+                  <!-- Réalisation -->
+                  <h5 class="section-subtitle">🛠️ Réalisation</h5>
+                  <p>
+                    En équipe, nous avons développé une plateforme SaaS qui intègre des outils open-source comme Nuclei, DalFox ou Testssl.sh. Deux modes d’audit sont proposés : un mode simple pour les failles courantes, et un mode avancé couvrant l’ensemble des vecteurs d’attaque. Les résultats sont centralisés dans un rapport lisible, exportable en PDF/JSON/HTML, avec un scoring basé sur l’impact et l’exploitabilité.
+                  </p>
+                
+                  <!-- Compétences -->
+                  <h5 class="section-subtitle">💡 Compétences acquises</h5>
+                  <p>
+                    Ce projet m’a permis de renforcer mes compétences en cybersécurité web, en analyse de vulnérabilités, en automatisation de pipelines, ainsi qu’en gestion de projet collaboratif. Il m’a également sensibilisé à la vulgarisation des rapports techniques pour les rendre accessibles à des non-initiés.
+                  </p>
+                
+                  <!-- Lien -->
+                  <a href="Audit_Web.zip" target="_blank" class="button button--flex button--small portfolio__button">Fichier zip</a>
                 </div>
+                
+                
+              </div>              
+              
+              
+              <div class="services__modal-service carousel-item">
+                <div class="image">
+                  <img src="cyber.jpg" alt="Nouveau Projet" class="portfolio__img">
+                </div>
+                <div class="texte">
+                  <h4 class="portfolio__title">Projet de Pentest – TP</h4>
+                
+                  <!-- Étiquettes de compétences -->
+                  <div class="project-tags">
+                    <span class="tag">#Pentest</span>
+                    <span class="tag">#Reconnaissance</span>
+                    <span class="tag">#SQL Injection</span>
+                    <span class="tag">#Buffer Overflow</span>
+                    <span class="tag">#Sécurité Offensive</span>
+                  </div>
+                
+                  <!-- Objectif -->
+                  <h5 class="section-subtitle">🎯 Objectif</h5>
+                  <p>
+                    Analyser et compromettre une machine virtuelle vulnérable dans le cadre d’un TP en environnement isolé, dans une optique d’apprentissage des techniques de pentest.
+                  </p>
+                
+                  <!-- Réalisation -->
+                  <h5 class="section-subtitle">🛠️ Réalisation</h5>
+                  <p>
+                    Après une phase de reconnaissance réseau, j’ai exploité une injection SQL pour accéder à la base de données, puis utilisé un service TFTP exposé pour récupérer un fichier sensible. Enfin, un buffer overflow dans un exécutable C m’a permis d’obtenir un accès root à la machine.
+                  </p>
+                
+                  <!-- Compétences -->
+                  <h5 class="section-subtitle">💡 Compétences acquises</h5>
+                  <p>
+                    Ce TP m’a permis d’appliquer une démarche offensive complète (reconnaissance, exploitation, élévation de privilèges), tout en consolidant mes bases sur les failles logicielles critiques et la logique d’un pentest encadré.
+                  </p>
+                
+                  <!-- Bouton -->
+                  <a href="TP2-Pentesting-MELLANO-Lancelot.pdf" target="_blank" class="button button--flex button--small portfolio__button">Rapport d'audit</a>
+                </div>
+                
               </div>
+
+
+              <div class="services__modal-service carousel-item">
+                <div class="image">
+                  <img src="cyber2.jpg" alt="image cybersécurité" class="portfolio__img">
+                </div>
+                <div class="texte">
+                  <h4 class="portfolio__title">Projet de Pentest – TP</h4>
+                
+                  <!-- Étiquettes de compétences -->
+                  <div class="project-tags">
+                    <span class="tag">#Pentesting</span>
+                    <span class="tag">#Reconnaissance</span>
+                    <span class="tag">#SQL Injection</span>
+                    <span class="tag">#TFTP</span>
+                    <span class="tag">#Cryptanalyse</span>
+                  </div>
+                
+                  <!-- Objectif -->
+                  <h5 class="section-subtitle">🎯 Objectif</h5>
+                  <p>
+                    Identifier et exploiter les failles d’une machine virtuelle placée sur un réseau privé via VPN, en appliquant les méthodes fondamentales d’un test d’intrusion.
+                  </p>
+                
+                  <!-- Réalisation -->
+                  <h5 class="section-subtitle">🛠️ Réalisation</h5>
+                  <p>
+                    Après la phase de reconnaissance, j’ai exploité une injection SQL pour accéder à la base de données et extraire un premier flag. Un service TFTP exposé a permis de récupérer une archive chiffrée, que j’ai déchiffrée pour poursuivre la progression dans l’environnement cible.
+                  </p>
+                
+                  <!-- Compétences -->
+                  <h5 class="section-subtitle">💡 Compétences acquises</h5>
+                  <p>
+                    Ce TP m’a permis de renforcer ma compréhension des failles d’applications web, des services réseau mal sécurisés et des techniques d’analyse de fichiers chiffrés dans un contexte de pentest contrôlé.
+                  </p>
+                
+                  <!-- Lien vers le rapport -->
+                  <a href="Rapport_Pentest_TP3_MELLANO-Lancelot-ALT.pdf" target="_blank" class="button button--flex button--small portfolio__button">Rapport d'audit</a>
+                </div>
+                
+              </div>
+
+              <div class="services__modal-service carousel-item">
+                <div class="image">
+                  <img src="cyber3.jpg" alt="image cybersécurité" class="portfolio__img">
+                </div>
+                <div class="texte">
+                  <h4 class="portfolio__title">Projet de Pentest – TP : Machine Windows</h4>
+                
+                  <!-- Étiquettes de compétences -->
+                  <div class="project-tags">
+                    <span class="tag">#Pentest</span>
+                    <span class="tag">#EternalBlue</span>
+                    <span class="tag">#SMB</span>
+                    <span class="tag">#FTP</span>
+                    <span class="tag">#Escalade de privilèges</span>
+                  </div>
+                
+                  <!-- Objectif -->
+                  <h5 class="section-subtitle">🎯 Objectif</h5>
+                  <p>
+                    Identifier et exploiter les vulnérabilités présentes sur une machine Windows exposée, afin d’illustrer les risques liés aux mauvaises configurations et à l’absence de mises à jour de sécurité.
+                  </p>
+                
+                  <!-- Réalisation -->
+                  <h5 class="section-subtitle">🛠️ Réalisation</h5>
+                  <p>
+                    L’exploitation a commencé par un accès FTP anonyme, suivi d’une injection SQL sur un service HTTP. Une faille critique SMB (EternalBlue) a ensuite été utilisée pour obtenir un accès administrateur complet à la machine cible.
+                  </p>
+                
+                  <!-- Compétences -->
+                  <h5 class="section-subtitle">💡 Compétences acquises</h5>
+                  <p>
+                    Ce TP m’a permis de mettre en œuvre un enchaînement d’exploits dans un contexte réaliste, d’appliquer des techniques d’escalade de privilèges, et de mieux comprendre les vecteurs d’attaque sur des systèmes Windows non sécurisés.
+                  </p>
+                
+                  <!-- Lien rapport -->
+                  <a href="Rapport_Pentest_TP4_MELLANO-Lancelot_ALT.pdf" target="_blank" class="button button--flex button--small portfolio__button">Rapport d'audit</a>
+                </div>
+                
+              </div>
+
+              <div class="services__modal-service carousel-item">
+                <div class="image">
+                  <img src="osint.jpg" alt="image cybersécurité" class="portfolio__img">
+                </div>
+                <div class="texte">
+                  <h4 class="portfolio__title">OSINT : Analyse d’une personnalité publique</h4>
+                
+                  <!-- Étiquettes de compétences -->
+                  <div class="project-tags">
+                    <span class="tag">#OSINT</span>
+                    <span class="tag">#Cybersécurité</span>
+                    <span class="tag">#Vie privée</span>
+                    <span class="tag">#Sources ouvertes</span>
+                    <span class="tag">#Investigation</span>
+                  </div>
+                
+                  <!-- Objectif -->
+                  <h5 class="section-subtitle">🎯 Objectif</h5>
+                  <p>
+                    Réaliser une enquête OSINT sur une personnalité publique du domaine cybersécurité, à partir d’informations accessibles légalement en ligne, dans le but d’évaluer la quantité d’informations personnelles exposées.
+                  </p>
+                
+                  <!-- Réalisation -->
+                  <h5 class="section-subtitle">🛠️ Réalisation</h5>
+                  <p>
+                    L’analyse a permis de retracer son parcours académique, ses postes dans des agences européennes, et d’identifier des éléments plus personnels (passions, environnement familial, localisation), tout en respectant un cadre légal et éthique.
+                  </p>
+                
+                  <!-- Compétences -->
+                  <h5 class="section-subtitle">💡 Compétences acquises</h5>
+                  <p>
+                    Ce projet m’a sensibilisé aux enjeux de la vie privée numérique, et m’a permis de développer une méthodologie rigoureuse de collecte et d’analyse de données en sources ouvertes, dans un contexte éthique et encadré.
+                  </p>
+                
+                  <!-- Bouton -->
+                  <a href="Rapport-TD-OSINT-Mellano-Lancelot.pdf" target="_blank" class="button button--flex button--small portfolio__button">Rapport d'audit</a>
+                </div>
+                
+              </div>
+
+
+
+
+
+
             </div>
             <div class="carousel-controls">
               <button class="modal-prev">&#10094;</button>
@@ -115,6 +358,9 @@
           </div>
         </div>
       </div>
+
+
+
 
       <!--==================== SERVICES 2: RESEAU ====================-->
       <div class="services__content">
@@ -139,9 +385,38 @@
                 </div>
                 <div class="texte">
                   <h4 class="portfolio__title">Création du réseau d'une PME</h4>
-                  <p>Pendant ma formation en Réseaux, j'ai eu l'opportunité de créer un réseau virtuel similaire à celui d'une PME, ce projet était encadré par un intervenant d' EUROCOM. L'objectif était de concevoir un réseau complet comprenant un firewall, une DMZ, ainsi que des services DHCP et DNS et du nat dynamique/statique pour sortir de l'entreprise et de la DMZ vers internet. Ce projet m'a permis de maîtriser la sécurisation des réseaux internes contre les menaces externes et d'assurer une gestion efficace des adresses IP et des noms de domaine. Grâce à ce projet, j'ai également acquis une compréhension approfondie de la conception d'une architecture réseau robuste et sécurisée. J'ai appris à tester rigoureusement la performance et la sécurité du réseau pour garantir son bon fonctionnement.</p>
+                
+                  <!-- Étiquettes de compétences -->
+                  <div class="project-tags">
+                    <span class="tag">#Réseau</span>
+                    <span class="tag">#Firewall</span>
+                    <span class="tag">#DMZ</span>
+                    <span class="tag">#DHCP/DNS</span>
+                    <span class="tag">#Sécurité</span>
+                  </div>
+                
+                  <!-- Objectif -->
+                  <h5 class="section-subtitle">🎯 Objectif</h5>
+                  <p>
+                    Concevoir un réseau d’entreprise complet et sécurisé pour simuler l’infrastructure d’une PME, dans le cadre d’un projet encadré par un intervenant de l’entreprise EUROCOM.
+                  </p>
+                
+                  <!-- Réalisation -->
+                  <h5 class="section-subtitle">🛠️ Réalisation</h5>
+                  <p>
+                    J’ai déployé une architecture réseau incluant un firewall, une DMZ, un serveur DHCP et DNS, ainsi que la mise en place de NAT dynamique et statique pour gérer les flux vers Internet. Le réseau a été conçu sur Cisco Packet Tracer en respectant des critères de robustesse et de sécurité.
+                  </p>
+                
+                  <!-- Compétences -->
+                  <h5 class="section-subtitle">💡 Compétences acquises</h5>
+                  <p>
+                    Ce projet m’a permis de consolider mes compétences en conception d’architectures sécurisées, en segmentation réseau et en gestion des services d’infrastructure. J’ai également appris à tester la fiabilité et la sécurité des flux internes et externes.
+                  </p>
+                
+                  <!-- Bouton de fichier -->
                   <a href="SAE21-Réseau-PME.pkt" target="_blank" class="button button--flex button--small portfolio__button">Fichier Pkt</a>
                 </div>
+                
               </div>
               <div class="services__modal-service carousel-item">
                 <div class="image">
@@ -149,13 +424,38 @@
                 </div>
                 <div class="texte">
                   <h4 class="portfolio__title">Conception d’un réseau multi-sites sécurisé</h4>
-                  <p>Dans ce projet, nous avons conçu un réseau interne sécurisé et redondant pour relier plusieurs sites distants. L'accent a été mis sur la redondance et l'équilibrage de charge afin d'assurer la disponibilité des services, même en cas de panne d'un équipement ou d'un lien. Concernant la sécurité, nous avons cherché un compromis entre protection des données et maintien de la fonctionnalité, en évitant de compromettre la performance et l’expérience utilisateur.
-
-                    La sécurité du réseau a été renforcée avec la mise en place de VPN IPSec entre les sites pour chiffrer les communications, et un VPN SSL permettant aux utilisateurs distants d'accéder aux ressources internes de manière sécurisée. Enfin, nous avons intégré un système de téléphonie IP multi-sites pour simplifier les communications internes entre les sites tout en réduisant les coûts.
-                    
-                    Ce projet a permis d’allier les concepts de sécurité, haute disponibilité, et performances réseau, en garantissant un fonctionnement fiable et adaptable à un environnement multi-sites.</p>
-                  <a href="TOPOLOGIE-RESEAU-SiteB-SUD-BORGHI_URSO_MELLANO.pdf" target="_blank" class="button button--flex button--small portfolio__button">Fichier Pkt</a>
+                
+                  <!-- Étiquettes de compétences -->
+                  <div class="project-tags">
+                    <span class="tag">#Réseau</span>
+                    <span class="tag">#Redondance</span>
+                    <span class="tag">#VPN IPSec/SSL</span>
+                    <span class="tag">#Haute disponibilité</span>
+                    <span class="tag">#Téléphonie IP</span>
+                  </div>
+                
+                  <!-- Objectif -->
+                  <h5 class="section-subtitle">🎯 Objectif</h5>
+                  <p>
+                    Concevoir un réseau sécurisé, performant et redondant pour relier plusieurs sites distants, en assurant à la fois la disponibilité des services et la sécurité des communications.
+                  </p>
+                
+                  <!-- Réalisation -->
+                  <h5 class="section-subtitle">🛠️ Réalisation</h5>
+                  <p>
+                    Nous avons mis en place une architecture multi-sites avec équilibrage de charge, liens redondants et VPN IPSec pour sécuriser les échanges inter-sites. Un accès distant via VPN SSL a également été intégré, ainsi qu’une infrastructure de téléphonie IP multi-sites.
+                  </p>
+                
+                  <!-- Compétences -->
+                  <h5 class="section-subtitle">💡 Compétences acquises</h5>
+                  <p>
+                    Ce projet m’a permis de maîtriser la conception de réseaux à haute disponibilité, d’implémenter des tunnels VPN adaptés à différents usages, et d’optimiser la sécurité sans nuire à l’expérience utilisateur.
+                  </p>
+                
+                  <!-- Bouton de fichier -->
+                  <a href="Conception d’un réseau multi-sites sécurisé.zip" target="_blank" class="button button--flex button--small portfolio__button">Fichier zip</a>
                 </div>
+                
               </div>
             </div>
             <div class="carousel-controls">
@@ -165,6 +465,198 @@
           </div>
         </div>
       </div>
+
+
+
+
+
+
+      
+      <!--==================== SERVICES 1: WEB ====================-->
+      <div class="services__content">
+        <div>
+          <iconify-icon icon="fluent-mdl2:my-network" style="color: #59ccd9" width="32" height="45"></iconify-icon>
+          <h3 class="services__title">Web<br /></h3>
+        </div>
+        <span class="button button--flex button--small button--link services__button" data-modal="web-modal">
+          Voir plus
+          <i class="uil uil-arrow-right button__icon"></i>
+        </span>
+
+        <!-- Modal Web -->
+        <div class="services__modal" id="web-modal">
+          <div class="services__modal-content">
+            <i class="uil uil-times services__modal-close" data-close="web-modal"></i>
+            <h2 class="services__modal-title">Web <br /></h2>
+            <div class="services__modal-services">
+              <div class="services__modal-service carousel-item">
+                <div class="image">
+                  <img src="thales.PNG" alt="Application web sur Raspberry" class="portfolio__img">
+                </div>
+                <div class="texte">
+                  <h4 class="portfolio__title">Application web sur Raspberry</h4>
+                
+                  <!-- Étiquettes de compétences -->
+                  <div class="project-tags">
+                    <span class="tag">#Développement Web</span>
+                    <span class="tag">#Raspberry Pi</span>
+                    <span class="tag">#Sécurité</span>
+                    <span class="tag">#HTML/CSS/PHP</span>
+                    <span class="tag">#Projet d'équipe</span>
+                  </div>
+                
+                  <!-- Objectif -->
+                  <h5 class="section-subtitle">🎯 Objectif :</h5>
+                  <p>
+                    Projet réalisé en première année de BUT R&T avec Thales Alenia Space. L’objectif était de concevoir une application web locale pour aider les équipes de tests avioniques à centraliser et sécuriser leurs bonnes pratiques.
+                  </p>
+                
+                  <!-- Réalisation -->
+                  <h5 class="section-subtitle">🛠️ Réalisation :</h5>
+                  <p>
+                    Nous avons développé un site web dynamique en HTML, CSS, PHP, Python et MySQL, hébergé sur un Raspberry Pi. J’ai participé à la mise en place du serveur local, à l’intégration de la base de données, et à la sécurisation de l’accès.
+                  </p>
+                
+                  <!-- Compétences -->
+                  <h5 class="section-subtitle">💡 Compétences acquises :</h5>
+                  <p>
+                    Ce projet m’a permis d’approfondir mes connaissances sur l’architecture client-serveur, de travailler avec des contraintes réelles, et de renforcer mes compétences en développement sécurisé et en gestion de projet collaboratif.
+                  </p>
+                
+                  <!-- Bouton de démo -->
+                  <a href="https://github.com/xxIslexx/GITHUB" target="_blank" class="button button--flex button--small portfolio__button">Demo</a>
+                </div>
+              </div>
+              
+              <div class="services__modal-service carousel-item">
+                <div class="image">
+                  <img src="sitejeux.png" alt="Site web des jeux vidéo" class="portfolio__img">
+                </div>
+                
+                <div class="texte">
+                  <h4 class="portfolio__title">Site web des jeux vidéo</h4>
+                
+                  <!-- Étiquettes de compétences -->
+                  <div class="project-tags">
+                    <span class="tag">#HTML</span>
+                    <span class="tag">#CSS</span>
+                    <span class="tag">#JavaScript</span>
+                    <span class="tag">#Début de parcours</span>
+                    <span class="tag">#Design Web</span>
+                  </div>
+                
+                  <!-- Objectif -->
+                  <h5 class="section-subtitle">🎯 Objectif</h5>
+                  <p>
+                    Premier projet personnel de création de site web, autour de l’univers des jeux vidéo. Il visait à découvrir et expérimenter les bases du développement web front-end.
+                  </p>
+                
+                  <!-- Réalisation -->
+                  <h5 class="section-subtitle">🛠️ Réalisation</h5>
+                  <p>
+                    J’ai conçu un site en HTML et CSS, avec quelques interactions en JavaScript. Ce projet m’a appris à structurer une page, à gérer la mise en page, et à créer une navigation simple et fonctionnelle.
+                  </p>
+                
+                  <!-- Compétences -->
+                  <h5 class="section-subtitle">💡 Compétences acquises</h5>
+                  <p>
+                    J’ai découvert les bases du développement web, du responsive design et de l’ergonomie utilisateur. Ce projet a posé les fondations de mon intérêt pour la création d’interfaces efficaces et esthétiques.
+                  </p>
+                
+                  <!-- Bouton de démo -->
+                  <a href="http://isis.unice.fr/~ml306535/acces/Site/Accueil.html" target="_blank" class="button button--flex button--small portfolio__button">Demo</a>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="carousel-controls">
+              <button class="modal-prev">&#10094;</button>
+              <button class="modal-next">&#10095;</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+                  <!--==================== SERVICES 4: COMMUNICATION ====================-->
+      <div class="services__content">
+        <div>
+          <iconify-icon icon="fluent-mdl2:my-network" style="color: #59ccd9" width="32" height="45"></iconify-icon>
+          <h3 class="services__title">Développement<br /></h3>
+        </div>
+        <span class="button button--flex button--small button--link services__button" data-modal="comm-modal">
+          Voir plus
+          <i class="uil uil-arrow-right button__icon"></i>
+        </span>
+
+        <!-- Modal Communication -->
+        <div class="services__modal" id="comm-modal">
+          <div class="services__modal-content">
+            <i class="uil uil-times services__modal-close" data-close="comm-modal"></i>
+            <h2 class="services__modal-title">Développement <br /></h2>
+            <div class="services__modal-services">
+              <div class="services__modal-service carousel-item">
+                <div class="image">
+                  <img src="roulette_android.PNG" alt="Guide de survie pour les R&T" class="portfolio__img">
+                </div>
+                <div class="texte">
+                  <h4 class="portfolio__title">Application Android de Jeu Communicant</h4>
+                
+                  <!-- Étiquettes de compétences -->
+                  <div class="project-tags">
+                    <span class="tag">#Android</span>
+                    <span class="tag">#API</span>
+                    <span class="tag">#BaseDeDonnées</span>
+                    <span class="tag">#Java</span>
+                    <span class="tag">#ProjetFullStack</span>
+                  </div>
+                
+                  <!-- Objectif -->
+                  <h5 class="section-subtitle">🎯 Objectif</h5>
+                  <p>
+                    Développer une application Android de jeu type casino permettant de miser des jetons et de recevoir ses gains via une API connectée à une base de données distante.
+                  </p>
+                
+                  <!-- Réalisation -->
+                  <h5 class="section-subtitle">🛠️ Réalisation</h5>
+                  <p>
+                    J’ai conçu une API en Java pour gérer l’enregistrement, l’authentification, la gestion des mises et des gains. Côté Android, l’interface permet d’effectuer des parties, d’afficher les règles du jeu et de suivre l’évolution des jetons en temps réel.
+                  </p>
+                
+                  <!-- Compétences -->
+                  <h5 class="section-subtitle">💡 Compétences acquises</h5>
+                  <p>
+                    Ce projet m’a permis d’acquérir des compétences en architecture full-stack, en manipulation de bases de données, en sécurisation des échanges API, ainsi qu’en conception d’interface mobile intuitive via Android Studio.
+                  </p>
+                
+                  <!-- Lien archive -->
+                  <a href="Appliction android roulette casino.zip" target="_blank" class="button button--flex button--small portfolio__button">Fichier zip</a>
+                </div>
+                
+                
+                
+              </div>
+            </div>
+            <div class="carousel-controls">
+              <button class="modal-prev">&#10094;</button>
+              <button class="modal-next">&#10095;</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+            <!-- Nouvelle ligne de cartes -->
+    <div class="services__container container grid">
+
 
       <!--==================== SERVICES 3: TELECOMMUNICATIONS ====================-->
       <div class="services__content">
@@ -188,10 +680,81 @@
                   <img src="LoRa.jpg" alt="Etude d'un système sans fil" class="portfolio__img">
                 </div>
                 <div class="texte">
-                  <h4 class="portfolio__title">Etude d'un système sans fil</h4>
-                  <p>Pendant ma formation en Télécommunications, j'ai conçu un robot télécommandé pour explorer et surveiller des zones inaccessibles ou dangereuses. Utilisant des cartes LoRa UCA pour l'émission et la réception, l'objectif était de créer un cahier des charges détaillé et d'étudier la faisabilité du projet en termes de portée, consommation et débit. Nous avons validé notre travail lors des séances encadrées. Le robot, contrôlé à distance, était équipé de capteurs pour mesurer la température, les gaz toxiques, la distance et l'humidité, transmettant les données en temps réel. Ce projet m'a permis de comprendre les défis des systèmes de communication à longue portée avec des contraintes énergétiques et de débit. J'ai appris à élaborer un cahier des charges précis et à évaluer la faisabilité technique d'un projet en étudiant la consommation énergétique et les performances des cartes LoRa.</p>
+                  <h4 class="portfolio__title">Étude d’un système sans fil</h4>
+                
+                  <!-- Étiquettes de compétences -->
+                  <div class="project-tags">
+                    <span class="tag">#LoRa</span>
+                    <span class="tag">#Télécommunications</span>
+                    <span class="tag">#Cahier des charges</span>
+                    <span class="tag">#Capteurs</span>
+                    <span class="tag">#Électronique embarquée</span>
+                  </div>
+                
+                  <!-- Objectif -->
+                  <h5 class="section-subtitle">🎯 Objectif</h5>
+                  <p>
+                    Concevoir un robot télécommandé capable de surveiller des zones dangereuses, en utilisant une liaison sans fil longue portée via des cartes LoRa. L’objectif principal était de valider la faisabilité technique à partir d’un cahier des charges précis.
+                  </p>
+                
+                  <!-- Réalisation -->
+                  <h5 class="section-subtitle">🛠️ Réalisation</h5>
+                  <p>
+                    Le robot, piloté à distance, était équipé de capteurs (température, humidité, gaz, distance) et communiquait en temps réel via LoRa UCA. Nous avons étudié la portée, le débit et la consommation, et structuré l’ensemble dans un cahier des charges détaillé.
+                  </p>
+                
+                  <!-- Compétences -->
+                  <h5 class="section-subtitle">💡 Compétences acquises</h5>
+                  <p>
+                    Ce projet m’a permis de mieux comprendre les contraintes des communications à faible débit et faible consommation. J’ai appris à structurer un projet technique dès sa phase de faisabilité et à raisonner en termes de compromis technologiques.
+                  </p>
+                
+                  <!-- Bouton rapport -->
                   <a href="Rapport-Projet-Lora.pdf" target="_blank" class="button button--flex button--small portfolio__button">Rapport</a>
                 </div>
+                
+              </div>
+
+              <div class="services__modal-service carousel-item">
+                <div class="image">
+                  <img src="lecteur_multimedia.PNG" alt="Configuration des VLANs et HSRP" class="portfolio__img">
+                </div>
+                <div class="texte">
+                  <h4 class="portfolio__title">Interface Audio Interactive dans Jupyter</h4>
+                
+                  <!-- Étiquettes de compétences -->
+                  <div class="project-tags">
+                    <span class="tag">#Python</span>
+                    <span class="tag">#Jupyter</span>
+                    <span class="tag">#GStreamer</span>
+                    <span class="tag">#Audio</span>
+                    <span class="tag">#Projet d'équipe</span>
+                  </div>
+                
+                  <!-- Objectif -->
+                  <h5 class="section-subtitle">🎯 Objectif</h5>
+                  <p>
+                    Concevoir une interface graphique dans un notebook Jupyter, permettant de lire des fichiers audio et d’afficher des informations multimédia enrichies, à l’aide des pipelines GStreamer et des widgets interactifs.
+                  </p>
+                
+                  <!-- Réalisation -->
+                  <h5 class="section-subtitle">🛠️ Réalisation</h5>
+                  <p>
+                    Nous avons intégré plusieurs fonctionnalités : lecture de fichiers MP3, WAV et FLAC, affichage des métadonnées, visualisation du spectre audio, pochette de l’album, réglage du volume et de la vitesse, ainsi qu’un système de conversion entre formats audio.
+                    Deux niveaux de développement ont été définis : <strong>Bart</strong> (fonctionnalités de base) et <strong>Lisa</strong> (fonctionnalités avancées), pour une montée en complexité progressive.
+                  </p>
+                
+                  <!-- Compétences -->
+                  <h5 class="section-subtitle">💡 Compétences acquises</h5>
+                  <p>
+                    Ce projet m’a permis d’approfondir mes compétences en développement Python, en gestion de flux multimédia, en interaction utilisateur avec Jupyter, et en structuration d’interfaces logicielles avec des pipelines modulaires.
+                  </p>
+                
+                  <!-- Lien archive -->
+                  <a href="Lecteur_multimedia.ipynb" target="_blank" class="button button--flex button--small portfolio__button">Fichier Jupyter</a>
+                </div>
+                
+                
               </div>
             </div>
             <div class="carousel-controls">
@@ -200,8 +763,14 @@
             </div>
           </div>
         </div>
+
+
+
       </div>
 
+
+
+      
       <!--==================== SERVICES 4: COMMUNICATION ====================-->
       <div class="services__content">
         <div>
@@ -225,112 +794,39 @@
                 </div>
                 <div class="texte">
                   <h4 class="portfolio__title">Guide de survie pour les R&T</h4>
-                  <p>Pendant ma formation en communication, j'ai eu l'opportunité de travailler sur la création du "Guide de survie des études en R&T". Ce projet avait pour objectif d'aider les futurs étudiants à s'adapter à leur nouvelle vie universitaire en leur fournissant des informations pratiques et utiles sur divers aspects de la formation. La rédaction du guide nous a permis de développer nos compétences en écriture, en travaillant sur des articles courts et informatifs, tout en utilisant un ton humoristique pour rendre le contenu plus engageant. Nous avons également appris à utiliser des outils de mise en page comme Canva pour créer un livret attrayant et professionnel. Ce projet m'a permis de développer des compétences essentielles en gestion de projet, en communication et en collaboration et en rédaction.</p>
+                
+                  <!-- Étiquettes de compétences -->
+                  <div class="project-tags">
+                    <span class="tag">#Communication</span>
+                    <span class="tag">#Mise en page</span>
+                    <span class="tag">#Canva</span>
+                    <span class="tag">#Rédaction</span>
+                    <span class="tag">#Travail d'équipe</span>
+                  </div>
+                
+                  <!-- Objectif -->
+                  <h5 class="section-subtitle">🎯 Objectif</h5>
+                  <p>
+                    Créer un livret destiné aux futurs étudiants du BUT R&T pour les aider à mieux comprendre leur formation et à s’intégrer dans la vie universitaire dès leur arrivée.
+                  </p>
+                
+                  <!-- Réalisation -->
+                  <h5 class="section-subtitle">🛠️ Réalisation</h5>
+                  <p>
+                    En équipe, nous avons rédigé des articles courts, clairs et engageants, en adoptant un ton à la fois informatif et humoristique. Nous avons utilisé l’outil Canva pour mettre en page un livret professionnel et attrayant.
+                  </p>
+                
+                  <!-- Compétences -->
+                  <h5 class="section-subtitle">💡 Compétences acquises</h5>
+                  <p>
+                    Ce projet m’a permis de développer mes compétences en communication écrite, en gestion de projet collaboratif, et en création de supports visuels adaptés à un public ciblé.
+                  </p>
+                
+                  <!-- Lien livret -->
                   <a href="Guide-de-survie.pdf" target="_blank" class="button button--flex button--small portfolio__button">Demo</a>
                 </div>
+                
               </div>
-            </div>
-            <div class="carousel-controls">
-              <button class="modal-prev">&#10094;</button>
-              <button class="modal-next">&#10095;</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-            <!-- Nouvelle ligne de cartes -->
-    <div class="services__container container grid">
-
-
-  <!--==================== SERVICES 5: CYbersecurité ====================-->
-      <div class="services__content">
-        <div>
-          <iconify-icon icon="fluent-mdl2:my-network" style="color: #59ccd9" width="32" height="45"></iconify-icon>
-          <h3 class="services__title">Cybersécurité<br /></h3>
-        </div>
-        <span class="button button--flex button--small button--link services__button" data-modal="web-modal">
-          Voir plus
-          <i class="uil uil-arrow-right button__icon"></i>
-        </span>
-
-        <!-- Modal Web -->
-        <div class="services__modal" id="web-modal">
-          <div class="services__modal-content">
-            <i class="uil uil-times services__modal-close" data-close="web-modal"></i>
-            <h2 class="services__modal-title">Cybersécurité <br /></h2>
-            <div class="services__modal-services">
-              <div class="services__modal-service carousel-item">
-                <div class="image">
-                  <img src="cyber.jpg" alt="Nouveau Projet" class="portfolio__img">
-                </div>
-                <div class="texte">
-                  <h4 class="portfolio__title">Projet de Pentest – TP</h4>
-                  <p>Le TP portait sur l'analyse d'une machine virtuelle vulnérable accessible via un VPN. Après une phase de reconnaissance, plusieurs failles ont été découvertes, notamment une injection SQL permettant d’accéder à la base de données.
-
-                    L’exploitation a continué avec un service de transfert de fichiers TFTP exposé, permettant de récupérer un fichier protégé. Enfin, une vulnérabilité dans un programme en C a été exploitée pour obtenir un accès administrateur via un buffer overflow.</p>
-                  <a href="TP2-Pentesting-MELLANO-Lancelot.pdf" target="_blank" class="button button--flex button--small portfolio__button">En savoir plus</a>
-                </div>
-              </div>
-
-
-              <div class="services__modal-service carousel-item">
-                <div class="image">
-                  <img src="cyber2.jpg" alt="image cybersécurité" class="portfolio__img">
-                </div>
-                <div class="texte">
-                  <h4 class="portfolio__title">Projet de Pentest – TP</h4>
-                  <p>Le TP portait sur l’analyse d’une machine virtuelle située sur un réseau privé accessible via un VPN. Après une phase de reconnaissance, une injection SQL a été découverte sur un site web, permettant d’obtenir un accès à la base de données et de récupérer un flag intermédiaire.
-
-                    L’exploitation s’est poursuivie avec un service TFTP exposé sur le réseau, qui a permis de télécharger un fichier ZIP protégé. Ce fichier, chiffré avec une méthode vulnérable, a ensuite été déchiffré, révélant des informations supplémentaires. Chaque étape a permis d’illustrer des faiblesses courantes dans les configurations réseau et la gestion des services.</p>
-                  <a href="Rapport_Pentest_TP3_MELLANO-Lancelot-ALT.pdf" target="_blank" class="button button--flex button--small portfolio__button">Demo</a>
-                </div>
-              </div>
-
-              <div class="services__modal-service carousel-item">
-                <div class="image">
-                  <img src="cyber3.jpg" alt="image cybersécurité" class="portfolio__img">
-                </div>
-                <div class="texte">
-                  <h4 class="portfolio__title">Projet de Pentest – TP</h4>
-                  <p>Le TP consistait à identifier et exploiter des failles de sécurité sur une machine Windows exposée. Après une reconnaissance initiale, des vulnérabilités critiques ont été découvertes, notamment un service FTP mal configuré permettant un accès anonyme, une injection SQL sur le service HTTP, ainsi que la faille EternalBlue, connue pour permettre l’exécution de code à distance via le protocole SMB.
-
-                    L'exploitation a permis d'accéder à des fichiers de validation intermédiaires et d'obtenir un accès administrateur grâce à EternalBlue, illustrant les risques majeurs liés aux systèmes non mis à jour et mal configurés.</p>
-                  <a href="Rapport_Pentest_TP4_MELLANO-Lancelot_ALT.pdf" target="_blank" class="button button--flex button--small portfolio__button">Demo</a>
-                </div>
-              </div>
-
-              <div class="services__modal-service carousel-item">
-                <div class="image">
-                  <img src="osint.jpg" alt="image cybersécurité" class="portfolio__img">
-                </div>
-                <div class="texte">
-                  <h4 class="portfolio__title">OSINT: Analyse d’une Personnalité Publique</h4>
-                  <p>Le travail portait sur l'analyse OSINT d'une personnalité publique dans le domaine de la cybersécurité. À partir de sources légales et accessibles en ligne, l'objectif était de reconstituer son parcours professionnel et d’identifier des éléments plus personnels comme ses hobbies et sa localisation.
-
-                    Le rapport a permis de découvrir plusieurs détails, notamment son historique académique, ses postes occupés au sein d'agences de cybersécurité, ainsi que ses engagements dans des initiatives européennes. L'analyse a également permis d'explorer ses centres d'intérêt, notamment la course à pied et ses implications familiales, en mettant en avant les limites de l'OSINT pour préserver la vie privée.</p>
-                  <a href="Rapport-TD-OSINT-Mellano-Lancelot.pdf" target="_blank" class="button button--flex button--small portfolio__button">Demo</a>
-                </div>
-              </div>
-
-              <div class="services__modal-service carousel-item">
-                <div class="image">
-                  <img src="saepentest.png" alt="image cybersécurité" class="portfolio__img">
-                </div>
-                <div class="texte">
-                  <h4 class="portfolio__title">Audit de Sécurité</h4>
-                  <p>Dans le cadre de ce projet, l’audit s’est concentré sur deux machines principales : une machine Samba accessible en interne et une machine WebApp située dans un réseau isolé. Le scénario simulait une attaque ciblée avec pivoting.
-
-                    L’attaque a débuté par la compromission de Samba en exploitant une faille critique, permettant l’exécution de commandes à distance. Une fois le contrôle de cette machine obtenu, l’accès persistant a été mis en place pour maintenir une connexion à long terme.
-                    
-                    Ensuite, à partir de Samba, le pivoting a été réalisé pour atteindre WebApp dans un sous-réseau distinct. L’objectif final était de prendre le contrôle complet de WebApp en identifiant et exploitant ses vulnérabilités.</p>
-                  <a href="Projet-Pentest.zip" target="_blank" class="button button--flex button--small portfolio__button">Demo</a>
-                </div>
-              </div>
-
-
-
-
             </div>
             <div class="carousel-controls">
               <button class="modal-prev">&#10094;</button>
@@ -383,11 +879,131 @@
       
             </div>
 
+
+
+            
+
+    </div>
+
+  </section>
+
+  <section class="services section " id="portfolio">
+    <h2 class="section__title">Projet professionnel</h2>
+    <span class="section__subtitle">Voici les projets que j'ai réalisé lors de mon alternance à la mairie de Sainte-Maxime</span>
+
+    <div class="services__container container grid">
+
+      <!--==================== SERVICES 2: RESEAU ====================-->
+      <div class="services__content">
+        <div>
+          <iconify-icon icon="fluent-mdl2:my-network" style="color: #59ccd9" width="32" height="45"></iconify-icon>
+          <h3 class="services__title">Supervision réseau<br /></h3>
+        </div>
+        <span class="button button--flex button--small button--link services__button" data-modal="reseau-modal">
+          Voir plus
+          <i class="uil uil-arrow-right button__icon"></i>
+        </span>
+
+                    <!-- Modal Web -->
+                    <div class="services__modal" id="web-modal">
+                      <div class="services__modal-content">
+                        <i class="uil uil-times services__modal-close" data-close="web-modal"></i>
+                        <h2 class="services__modal-title">Supervision réseau<br /></h2>
+                        <div class="services__modal-services">
+                          <div class="services__modal-service carousel-item">
+                            <div class="image">
+                              <img src="siem.png" alt="Nouveau Projet" class="portfolio__img">
+                            </div>
+                            <div class="texte">
+                              <h4 class="portfolio__title">Sécurisation des infrastructures IT avec un SIEM</h4>
+                            
+                              <!-- Étiquettes de compétences -->
+                              <div class="project-tags">
+                                <span class="tag">#SIEM</span>
+                                <span class="tag">#Securonix</span>
+                                <span class="tag">#Détection d'incidents</span>
+                                <span class="tag">#Logs</span>
+                                <span class="tag">#Cybersécurité</span>
+                              </div>
+                            
+                              <!-- Objectif -->
+                              <h5 class="section-subtitle">🎯 Objectif</h5>
+                              <p>
+                                Mettre en place une solution centralisée de gestion des événements de sécurité pour renforcer la surveillance et la réactivité face aux menaces informatiques au sein de la mairie de Sainte-Maxime.
+                              </p>
+                            
+                              <!-- Réalisation -->
+                              <h5 class="section-subtitle">🛠️ Réalisation</h5>
+                              <p>
+                                Après une étude comparative des solutions du marché, la solution Securonix a été retenue pour sa capacité à corréler les logs via de l’analyse comportementale et à automatiser la gestion des incidents. Le projet comprend l’intégration des logs des pare-feu, serveurs Windows, postes de travail et services cloud.
+                              </p>
+                            
+                              <!-- Compétences -->
+                              <h5 class="section-subtitle">💡 Compétences acquises</h5>
+                              <p>
+                                Ce projet m’a permis de comprendre les enjeux de la supervision centralisée, de découvrir l’approche SIEM moderne basée sur l’IA, et de participer à une analyse d’architecture de sécurité concrète à l’échelle d’un système d’information municipal.
+                              </p>
+                            
+                              <!-- Lien vers le livrable -->
+                             
+                            </div>
+                            
+                          </div>
+            
+            
+                          <div class="services__modal-service carousel-item">
+                            <div class="image">
+                              <img src="switch.jpg" alt="image cybersécurité" class="portfolio__img">
+                            </div>
+                            <div class="texte">
+                              <h4 class="portfolio__title">Automatisation de la supervision des switchs réseau</h4>
+                            
+                              <!-- Étiquettes de compétences -->
+                              <div class="project-tags">
+                                <span class="tag">#Supervision</span>
+                                <span class="tag">#Automatisation</span>
+                                <span class="tag">#PowerShell</span>
+                                <span class="tag">#Réseau</span>
+                                <span class="tag">#Sécurité</span>
+                              </div>
+                            
+                              <!-- Objectif -->
+                              <h5 class="section-subtitle">🎯 Objectif</h5>
+                              <p>
+                                Automatiser la vérification quotidienne des switchs réseau pour détecter rapidement tout incident ou modification non autorisée, et ainsi améliorer la surveillance de l’infrastructure IT.
+                              </p>
+                            
+                              <!-- Réalisation -->
+                              <h5 class="section-subtitle">🛠️ Réalisation</h5>
+                              <p>
+                                Des scripts PowerShell ont été développés pour vérifier chaque nuit l’accessibilité des switchs via SSH, leur état, ainsi que l’intégrité de leur configuration. Un rapport synthétique est généré chaque matin, et des alertes sont envoyées en cas d’anomalie.
+                              </p>
+                            
+                              <!-- Compétences -->
+                              <h5 class="section-subtitle">💡 Compétences acquises</h5>
+                              <p>
+                                Ce projet m’a permis de renforcer mes compétences en scripting, en supervision réseau, et en sécurité opérationnelle, notamment via le chiffrement des identifiants et l’analyse d’intégrité à l’aide de hachage MD5.
+                              </p>
+                            </div>
+                            
+                          </div>
+            
+                        </div>
+                        <div class="carousel-controls">
+                          <button class="modal-prev">&#10094;</button>
+                          <button class="modal-next">&#10095;</button>
+                        </div>
+                      </div>
+                    </div>
+      </div>
+
+
+
                   <!--==================== SERVICES 7: Professionel ====================-->
                   <div class="services__content">
                     <div>
                       <iconify-icon icon="fluent-mdl2:my-network" style="color: #59ccd9" width="32" height="45"></iconify-icon>
-                      <h3 class="services__title">Projet Professionnel <br /></h3>
+                      <h3 class="services__title">Support technique <br /></h3>
                     </div>
                     <span class="button button--flex button--small button--link services__button" data-modal="web-modal">
                       Voir plus
@@ -398,64 +1014,48 @@
                     <div class="services__modal" id="web-modal">
                       <div class="services__modal-content">
                         <i class="uil uil-times services__modal-close" data-close="web-modal"></i>
-                        <h2 class="services__modal-title">Projet Professionnel en Entreprise<br /></h2>
+                        <h2 class="services__modal-title">Support technique<br /></h2>
                         <div class="services__modal-services">
-                          <div class="services__modal-service carousel-item">
-                            <div class="image">
-                              <img src="siem.png" alt="Nouveau Projet" class="portfolio__img">
-                            </div>
-                            <div class="texte">
-                              <h4 class="portfolio__title">Sécurisation des Infrastructures IT avec un SIEM</h4>
-                              <p>Dans le cadre de mon alternance, j'ai participé à l'analyse et à la préparation du déploiement d'une solution SIEM (Security Information and Event Management) pour la mairie de Sainte-Maxime. L'objectif principal était d'améliorer la détection et la gestion des incidents de sécurité à travers une plateforme centralisée capable de collecter, corréler et analyser les logs provenant de divers équipements réseau et systèmes.
-
-                                Après avoir étudié plusieurs solutions disponibles sur le marché, nous avons retenu la solution Securonix pour sa capacité à utiliser l'intelligence artificielle dans l'analyse comportementale des événements. Cette solution permettra notamment de repérer les activités anormales, de prioriser les alertes en fonction de leur criticité et d'automatiser certaines réponses aux incidents. Le projet inclut également l'intégration des sources de logs critiques comme les pare-feu, les serveurs Windows, les postes de travail et les services cloud utilisés par la mairie.</p>
-                              <a href="siem.pdf" target="_blank" class="button button--flex button--small portfolio__button">En savoir plus</a>
-                            </div>
-                          </div>
-            
-            
-                          <div class="services__modal-service carousel-item">
-                            <div class="image">
-                              <img src="switch.jpg" alt="image cybersécurité" class="portfolio__img">
-                            </div>
-                            <div class="texte">
-                              <h4 class="portfolio__title">Automatisation de la Supervision des Switchs Réseau</h4>
-                              <p>Dans le cadre de mon alternance, j'ai mis en place des scripts automatisés pour vérifier chaque nuit l'état des switchs réseau enregistrés. Ces scripts permettent de s'assurer que les équipements sont toujours opérationnels, que la connexion SSH fonctionne correctement, et que les configurations n'ont pas été modifiées de manière malveillante.
-
-                                Chaque matin, un rapport est généré, indiquant si les switchs sont accessibles, si des changements de configuration ont été détectés, ou si tout est conforme aux attentes. En cas d'anomalie, des alertes sont déclenchées, permettant aux équipes IT d'intervenir rapidement.
-                                
-                                Pour garantir la sécurité de la solution, toutes les informations sensibles, comme les identifiants de connexion ou les configurations enregistrées, sont cryptées ou hachées à l’aide de sommes MD5. Ce projet permet de renforcer la sécurité des équipements réseau tout en facilitant leur gestion quotidienne grâce à une surveillance automatisée et fiable.
-                              </p>
-                            </div>
-                          </div>
-            
-
+                        
             
                           <div class="services__modal-service carousel-item">
                             <div class="image">
                               <img src="app-python.jpg" alt="image cybersécurité" class="portfolio__img">
                             </div>
                             <div class="texte">
-                              <h4 class="portfolio__title">Dispatch Sharp</h4>
-                              <p>Dans le cadre de mon alternance, j'ai développé une application Python appelée Dispatch Sharp, destinée à faciliter la gestion des livraisons et le dispatching des équipements informatiques au sein de mon entreprise.
-
-                                L'application se base sur un fichier Excel partagé sur un Google Drive qui sert de base de données centrale. Lorsqu'un produit informatique est reçu, l'application permet d'entrer le numéro de série inscrit sur l'équipement. En croisant ces informations avec le fichier Excel, l'application identifie automatiquement la destination ou la bannette de livraison adéquate, afin que le produit soit acheminé au bon endroit.
-                                
-                                Ce projet a permis de simplifier et d'automatiser le processus de réception et de dispatching des équipements, tout en réduisant les erreurs humaines liées à la gestion manuelle. Il m'a également permis de renforcer mes compétences en Python, en manipulation de fichiers Excel, ainsi qu'en intégration avec des services cloud comme Google Drive.</p>
+                              <h4 class="portfolio__title">Dispatch Sharp – Application de gestion de livraisons</h4>
+                            
+                              <!-- Étiquettes de compétences -->
+                              <div class="project-tags">
+                                <span class="tag">#Python</span>
+                                <span class="tag">#Excel</span>
+                                <span class="tag">#Google Drive API</span>
+                                <span class="tag">#Automatisation</span>
+                                <span class="tag">#Workflow IT</span>
+                              </div>
+                            
+                              <!-- Objectif -->
+                              <h5 class="section-subtitle">🎯 Objectif</h5>
+                              <p>
+                                Faciliter et fiabiliser le dispatching des équipements informatiques reçus, en automatisant le lien entre les numéros de série et leur destination via une application dédiée.
+                              </p>
+                            
+                              <!-- Réalisation -->
+                              <h5 class="section-subtitle">🛠️ Réalisation</h5>
+                              <p>
+                                L'application Python exploite un fichier Excel centralisé sur Google Drive pour croiser en temps réel les numéros de série des équipements avec leur destination. Une fois le numéro entré, l’outil indique automatiquement la bannette ou la personne de livraison.
+                              </p>
+                            
+                              <!-- Compétences -->
+                              <h5 class="section-subtitle">💡 Compétences acquises</h5>
+                              <p>
+                                Ce projet m’a permis de consolider mes compétences en développement Python, en traitement de fichiers Excel et en intégration cloud. Il m’a également sensibilisé à l’optimisation des processus logistiques internes.
+                              </p>
                             </div>
+                            
                           </div>
 
-                          <div class="services__modal-service carousel-item">
-                            <div class="image">
-                              <img src="topo.jpg" alt="image cybersécurité" class="portfolio__img">
-                            </div>
-                            <div class="texte">
-                              <h4 class="portfolio__title">Topologie du Réseau</h4>
-                              <p>Dans le cadre de mon alternance, j'ai travaillé sur un projet de création d'une documentation complète de la topologie réseau de l'entreprise. L'objectif de ce projet était d'optimiser la gestion du réseau en créant une référence claire et détaillée de toute l'infrastructure, incluant les équipements, les adresses IP, les VLANs, les configurations des routeurs, switches, firewalls, ainsi que les connexions VPN.
 
-                                Ce travail m'a permis de mieux comprendre l'architecture réseau existante tout en identifiant des axes d'amélioration sur la gestion des configurations. Le document créé sert désormais de référence technique pour les administrateurs réseau, facilitant les interventions et garantissant une meilleure performance opérationnelle.</p>
-                            </div>
-                          </div>
             
                          
             
@@ -473,9 +1073,18 @@
 
 
 
+
+
+                  
+
+
+
     </div>
 
   </section>
+  
+
+
 </main>
 
 <script>
